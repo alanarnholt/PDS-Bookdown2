@@ -108,7 +108,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Passion Driven Statistics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
 <li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
@@ -155,7 +155,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
 <li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
-<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="copyright-1.html"><a href="copyright-1.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
 
@@ -208,7 +208,7 @@ Psychology-Mathematics 0.8285714 -0.7835815 2.440724 0.5411978</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
 <span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">11.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
 <span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration)))</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-45-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar) <span class="co"># reset margins</span></code></pre></div>
 <p>Of the <span class="math inline">\(\binom{4}{2}=6\)</span> pairwise differences, Tukey’s HSD suggest that all except <code>Mathematics - English</code> and <code>Psychology - Mathematics</code> are significant.</p>
 <p><strong>Analysis of Variance Assignment</strong></p>
@@ -266,7 +266,7 @@ $DCScat
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
 <span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">8.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
 <span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(mod))</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-47-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar)</code></pre></div>
 <p>ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1310) = 31.95, p &lt; 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and &gt;20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).</p>
 <hr />

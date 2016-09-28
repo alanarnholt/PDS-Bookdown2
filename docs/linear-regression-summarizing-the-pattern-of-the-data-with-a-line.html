@@ -108,7 +108,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Passion Driven Statistics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
 <li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
@@ -155,7 +155,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
 <li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
-<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="copyright-1.html"><a href="copyright-1.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
 
@@ -223,7 +223,7 @@ PV</code></pre></div>
              <span class="dt">arrow =</span> <span class="kw">arrow</span>(<span class="dt">type =</span> <span class="st">&quot;closed&quot;</span>, <span class="dt">angle =</span> <span class="dv">15</span>), <span class="dt">color =</span> <span class="st">&quot;red&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> <span class="kw">data.frame</span>(<span class="dt">Age =</span> <span class="kw">c</span>(<span class="dv">60</span>, <span class="dv">19</span>), <span class="dt">Distance =</span> <span class="kw">c</span>(PV, PV)),
             <span class="dt">arrow =</span> <span class="kw">arrow</span>(<span class="dt">type =</span> <span class="st">&quot;closed&quot;</span>, <span class="dt">angle =</span> <span class="dv">15</span>, <span class="dt">ends =</span> <span class="st">&quot;first&quot;</span>), <span class="dt">color =</span> <span class="st">&quot;red&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-67-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-68-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>The technique that specifies the dependence of the response variable on the explanatory variable is called regression. When that dependence is linear (which is the case in our examples in this section), the technique is called linear regression. Linear regression is therefore the technique of finding the line that best fits the pattern of the linear relationship (or in other words, the line that best describes how the response variable linearly depends on the explanatory variable).</p>
 <p>To understand how such a line is chosen, consider the following very simplified version of the age-distance example (we left just 6 of the drivers on the scatterplot):</p>
 <div class="figure">
@@ -303,12 +303,12 @@ b</code></pre></div>
 <span class="st">   </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +<span class="st"> </span>
 <span class="st">   </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>) +
 <span class="st">   </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="kw">expression</span>(<span class="kw">hat</span>(Y) ==<span class="st"> &quot;576.7 - 3x&quot;</span>) )</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-69-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-70-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>As we can see, the regression line fits the linear pattern of the data quite well.</p>
 <p><strong>Comment</strong></p>
 <p>As we mentioned before, hand-calculation is not the focus of this course. We wanted you to see one example in which the least squares regression line is calculated by hand, but in general we’ll let a statistics package do that for us.</p>
 <p>Let’s go back now to our motivating example, in which we wanted to predict the maximum distance at which a sign is legible for a 60-year-old. Now that we have found the least squares regression line, this prediction becomes quite easy:</p>
-<p><img src="pds_files/figure-html/unnamed-chunk-70-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-71-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Practically, what the figure tells us is that in order to find the predicted legibility distance for a 60-year-old, we plug Age = 60 into the regression line equation, to find that:</p>
 <p>Predicted distance = <span class="math inline">\(576.6819372 + (-3.0068354 \times 60) = 396.271815\)</span>. 396.271815 feet is our best prediction for the maximum distance at which a sign is legible for a 60-year-old.</p>
 <hr />

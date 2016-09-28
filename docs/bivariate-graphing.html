@@ -108,7 +108,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Passion Driven Statistics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
 <li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
@@ -155,7 +155,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
 <li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
-<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="copyright-1.html"><a href="copyright-1.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
 
@@ -188,23 +188,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <span class="dt">title =</span> <span class="st">&quot;Fraction of young adult daily smokers</span><span class="ch">\n</span><span class="st">with and without nicotine addiction</span><span class="ch">\n</span><span class="st">by depression status&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;green&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">name =</span> <span class="st">&quot;Tobacco Addiction Status&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-31-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-32-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Mosaic Plots</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(vcd)
 <span class="kw">mosaic</span>(~TobaccoDependence +<span class="st"> </span>MajorDepression ,<span class="dt">data =</span> nesarc, <span class="dt">shade =</span> <span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-32-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-33-1.png" width="576" style="display: block; margin: auto;" /></p>
 <p>(<span class="math inline">\(C \rightarrow Q\)</span>) Boxplots and Violin plots</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> frustration, <span class="kw">aes</span>(<span class="dt">x =</span> Major, <span class="dt">y =</span> Frustration.Score)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Frustration Score&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frustration Score by</span><span class="ch">\n</span><span class="st"> Academic Major&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-33-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-34-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Violin plots</span>
 <span class="kw">ggplot</span>(<span class="dt">data =</span> frustration, <span class="kw">aes</span>(<span class="dt">x =</span> Major, <span class="dt">y =</span> Frustration.Score)) +
 <span class="st">  </span><span class="kw">geom_violin</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_bw</span>() +
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Frustration Score&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frustration Score by</span><span class="ch">\n</span><span class="st"> Academic Major&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-33-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-34-2.png" width="672" style="display: block; margin: auto;" /></p>
 <p>(Q <span class="math inline">\(\rightarrow\)</span> Q) Scatter plots</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PASWR2)
 <span class="kw">ggplot</span>(<span class="dt">data =</span> GRADES, <span class="kw">aes</span>(<span class="dt">x =</span> sat, <span class="dt">y =</span> gpa)) +<span class="st"> </span>
@@ -212,7 +212,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="st">  </span><span class="kw">theme_bw</span>() +
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;SAT score&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;First semester college Grade Point Average&quot;</span>) +
 <span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-34-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-35-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>(<span class="math inline">\(Q \rightarrow C\)</span>) Scatter plot for logistic regression</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ISLR)
 <span class="kw">library</span>(ggplot2)
@@ -223,7 +223,7 @@ Default$studentN &lt;-<span class="st"> </span><span class="kw">ifelse</span>(De
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;glm&quot;</span>, <span class="dt">method.args =</span> <span class="kw">list</span>(<span class="dt">family =</span> <span class="st">&quot;binomial&quot;</span>)) +
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Probability of Default&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-35-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-36-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
             </section>
 

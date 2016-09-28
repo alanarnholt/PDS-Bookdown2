@@ -108,7 +108,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Passion Driven Statistics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
 <li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
@@ -155,7 +155,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
 <li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
-<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="copyright-1.html"><a href="copyright-1.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
 
@@ -226,7 +226,7 @@ Nicotine Dependence         14.55882       14.75000</code></pre>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Mean Daily Cigarettes Smoked&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_bw</span>()</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-65-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-66-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>I have a similar question regarding alcohol dependence. Specifically, I believe that the association between smoking quantity and nicotine dependence is different for individuals with and without alcohol dependence (the potential moderator). For those individuals with alcohol dependence, I believe that smoking and nicotine dependence will not be associated (i.e there will be high rates nicotine dependence at low, moderate and high levels of smoking), while among those without alcohol dependence, smoking quantity will be significantly associated with the likelihood of experiencing nicotine dependence (i.e. the more one smokes, the more likely he/she is to be nicotine dependent). In other words, I am hypothesizing a non-significant association between smoking and nicotine dependence for individuals with alcohol dependence and a significant,positive association between smoking and nicotine dependence for individuals without alcohol dependence.</p>
 <p>To test this, I run two ANOVA tests, one examining the association between smoking and nicotine dependence for those with alcohol dependence and one examining the association between smoking and nicotine dependence for those without alcohol dependence.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mod4 &lt;-<span class="st"> </span><span class="kw">aov</span>(DailyCigsSmoked ~<span class="st"> </span>TobaccoDependence, 
@@ -263,7 +263,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Mean Daily Cigarettes Smoked&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>)) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">theme_bw</span>()</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-66-1.png" width="960" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-67-1.png" width="960" style="display: block; margin: auto;" /></p>
 <p>The results show that there is a significant association between smoking and nicotine dependence but, as I hypothesized, sized, only for those without alcohol dependence. That is, for those without alcohol dependence, nicotine dependence is positively associated with level of smoking. In contrast, for those with alcohol dependence, the association between smoking and nicotine dependence is non-significant (statistically similar rates of nicotine dependence at every level of smoking). Because the relationship between the explanatory variable (smoking) and the response variable (nicotine dependence) is different based on the presence or absence of our third variable (alcohol dependence), we would say that alcohol dependence moderates the relationship between nicotine dependence and smoking.</p>
 <hr />
 

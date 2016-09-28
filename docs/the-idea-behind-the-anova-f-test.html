@@ -108,7 +108,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><a href="./">Passion Driven Statistics</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
 <li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
 <li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
@@ -155,7 +155,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
 <li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
-<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="chapter" data-level="" data-path="copyright-1.html"><a href="copyright-1.html"><i class="fa fa-check"></i>Copyright</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
 
@@ -205,7 +205,7 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <li>The sample mean frustration score of the 35 psychology majors is: <span class="math inline">\(\bar{x}_4 = 14.0285714\)</span></li>
 </ul>
 <p>We present two possible scenarios for our example (different data). In both cases, we construct side-by-side box plots (showing the distribution of the data including the range, lowest and highest values, the mean, etc.) four groups of frustration levels that have the same variation among their means. Thus, Scenario #1 and Scenario #2 (the actual values from <code>frustration</code>) both show data for four groups with the sample means 7.3142857, 11.7714286, 13.2, and 14.0285714.</p>
-<p><img src="pds_files/figure-html/unnamed-chunk-40-1.png" width="672" style="display: block; margin: auto;" /><img src="pds_files/figure-html/unnamed-chunk-40-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-41-1.png" width="672" style="display: block; margin: auto;" /><img src="pds_files/figure-html/unnamed-chunk-41-2.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Review 11.2 Multiple Choice</strong></p>
 <p>Look carefully at the graphs of both scenarios. For which of the two scenarios would you be willing to believe that samples have been taken from four groups which have the same population means?</p>
 <p>A. Scenario 1</p>
@@ -227,13 +227,13 @@ Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&
 <p>where we’re testing:</p>
 <p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span> versus <span class="math inline">\(H_a:\mu_i \neq \mu_j\)</span> for some <span class="math inline">\(i,j\)</span> or not all <span class="math inline">\(\mu\)</span>’s are equal.</p>
 <p>The following are two possible scenarios of the data (note in both scenarios the sample means are 24.9386037, 30.0584293, and 35.285865).</p>
-<p><img src="pds_files/figure-html/unnamed-chunk-42-1.png" width="768" style="display: block; margin: auto;" /><img src="pds_files/figure-html/unnamed-chunk-42-2.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-43-1.png" width="768" style="display: block; margin: auto;" /><img src="pds_files/figure-html/unnamed-chunk-43-2.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Consider the <code>frustration</code> Data Frame Again</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> frustration, <span class="kw">aes</span>(<span class="dt">x =</span> Major, <span class="dt">y =</span> Frustration.Score)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>() +
 <span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Frustration Score&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Frustration Score by Major&quot;</span>)</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-43-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-44-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RES &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))
 RES</code></pre></div>
 <pre><code>             Df Sum Sq Mean Sq F value Pr(&gt;F)    
