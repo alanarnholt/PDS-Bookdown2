@@ -4,7 +4,9 @@
 
 **One Categorical Variable**
 
-Please watch the [Chapter 08 video](http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/).
+Please watch the Chapter 08 video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/")`
 
 Consider the data frame `EPIDURALF` from the `PASWR2` package which records intermediate results from a study to determine whether the traditional sitting position or the hamstring stretch position is superior for administering epidural anesthesia to pregnant women in labor as measured by the number of obstructive (needle to bone) contacts.  In this study, there were four physicians.  To summarize the number of patients treated by each physician we can use the function `xtabs`.
 

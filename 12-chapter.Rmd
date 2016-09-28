@@ -1,7 +1,10 @@
 
 # Chi-Square Test of Independence^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677]
 
-Please watch the [Chapter 12 video](http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/).
+Please watch the Chapter 12 video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/")`
+
 
 The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable ($X$) and a quantitative response variable ($Y$). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case $C \rightarrow C$.
 

@@ -2,7 +2,9 @@
 
 # Analysis of Variance^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8ad280020ca60166a71faa2caf60]
 
-Please watch the [Chapter 11 video](http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/).
+Please watch the Chapter 11 video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/05/11/r-chapter-11/")`
 
 In our description of hypothesis testing in the previous chapter, we started with case $C \rightarrow Q$, where the explanatory variable/independent variable/predictor ($X$ = major depression) is categorical and the response variable/dependent variable/outcome ($Y$ = number of cigarettes smoked) is quantitative. Here is a similar example:
 

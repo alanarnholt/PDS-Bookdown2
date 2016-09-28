@@ -188,7 +188,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <span class="dt">title =</span> <span class="st">&quot;Fraction of young adult daily smokers</span><span class="ch">\n</span><span class="st">with and without nicotine addiction</span><span class="ch">\n</span><span class="st">by depression status&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="st">&quot;green&quot;</span>, <span class="st">&quot;red&quot;</span>), <span class="dt">name =</span> <span class="st">&quot;Tobacco Addiction Status&quot;</span>) +<span class="st"> </span>
 <span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="kw">guide_legend</span>(<span class="dt">reverse =</span> <span class="ot">TRUE</span>))</code></pre></div>
-<p><img src="pds_files/figure-html/unnamed-chunk-32-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="pds_files/figure-html/unnamed-chunk-32-2.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Mosaic Plots</strong></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(vcd)
 <span class="kw">mosaic</span>(~TobaccoDependence +<span class="st"> </span>MajorDepression ,<span class="dt">data =</span> nesarc, <span class="dt">shade =</span> <span class="ot">TRUE</span>)</code></pre></div>

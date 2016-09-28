@@ -2,7 +2,9 @@
 
 # Moderation
 
-Please watch the [Chapter 14 Video](http://passiondrivenstatistics.com/2015/08/25/chapter-14/).
+Please watch the Chapter 14 Video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/08/20/r-chapter-14/")`
 
 In statistics and regression analysis, **moderation** occurs when the relationship between two variables depends on a third variable. The third variable is referred to as the **moderator variable** or simply the **moderator**. The effect of a moderating variable is characterized statistically as an interaction; that is, a categorical (e.g., sex, race, class) or quantitative (e.g., level of reward) variable that affects the direction and/or strength of the relation between dependent and independent variables. Specifically within a correlational analysis framework, a moderator is a third variable that affects the zero-order correlation between two other variables, or the value of the slope of the dependent variable on the independent variable. In analysis of variance (ANOVA) terms, a basic moderator effect can be represented as an interaction between a focal independent variable and a factor that specifies the appropriate conditions for its operation.^[https://en.wikipedia.org/wiki/Moderation_(statistics)]
 
