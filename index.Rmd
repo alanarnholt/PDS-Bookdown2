@@ -20,9 +20,9 @@ knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning 
 ```{block, type = "rmdlicense"}
 This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License]( http://creativecommons.org/licenses/by-nc-sa/3.0)
 
-Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/alanarnholt/PDS-BookDown2/issues>. 
+Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/alanarnholt/PDS-Bookdown2/issues>. 
 
-The source code that creates this document resides at <https://github.com/alanarnholt/PDS-BookDown2/>.
+The source code that creates this document resides at <https://github.com/alanarnholt/PDS-Bookdown2/>.
 ```
 
 This document is maintained by [Alan T. Arnholt](https://alanarnholt.github.io/web/)
