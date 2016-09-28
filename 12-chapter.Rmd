@@ -3,7 +3,7 @@
 
 Please watch the Chapter 12 video below.
 
-`r knitr::include_url("http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/")`
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/", height = "500px")`
 
 
 The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable ($X$) and a quantitative response variable ($Y$). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case $C \rightarrow C$.

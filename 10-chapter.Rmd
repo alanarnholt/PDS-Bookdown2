@@ -2,7 +2,10 @@
 
 # Hypothesis Testing
 
-Please watch the [Chapter 10 video](http://passiondrivenstatistics.com/2015/07/15/chapter-10/).
+Please watch the Chapter 10 Video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2015/07/15/chapter-10/", height = "500px")`
+
 
 Thus far, we have focused on descriptive statistics. Through our examination of frequency distributions, graphical representations of our variables, and calculations of center and spread, the goal has been to describe and summarize data. Now you will be introduced to inferential statistics. In addition to describing data, inferential statistics allow us to directly test our hypothesis by evaluating (based on a sample) our research question with the goal of generalizing the results to the larger population from which the sample was drawn.
 

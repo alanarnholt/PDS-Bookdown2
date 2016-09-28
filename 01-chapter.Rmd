@@ -1,8 +1,9 @@
 
 # Overview
 
-Please watch the Course Introduction Video `r knitr::include_url("http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/", height = "500px")`
+Please watch the Course Introduction Video below. If all you see below is an empty box, you will need to allow your browser permission to load the videos.  In Google Chrome, you can allow the videos by clicking on the gray and white shield with a red x on the far right of the url bar.  Then, click on the "Load unsafe scripts" button.  These scripts are safe.  In Firefox, click on the green lock with a yellow triangle exclamation mark to the left of the url bar.  Then, click the right arrow and the "Disable protection for now" button.  This site is safe.    
 
+`r knitr::include_url("http://passiondrivenstatistics.com/2015/05/20/chapter-01-course-introduction/", height = "500px")`
 
 This statistics course is presented in the service of a project of your choosing and will offer you an intensive hands-on experience in the quantitative research process. You will develop skills in 1) generating testable hypotheses; 2) understanding large data sets; 3) formatting and managing data; 4) conducting descriptive and inferential statistical analyses; and 5) presenting results for expert and novice audiences. It is designed for students who are interested in developing skills that are useful for working with data and using statistical tools to analyze them. No prior experience with data or statistics is required. 
 

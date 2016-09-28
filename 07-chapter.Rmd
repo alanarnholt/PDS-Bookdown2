@@ -31,7 +31,7 @@ knitr::kable(DF2, align = c("c", "c", "c"), caption = "Body Image Distribution")
 
 Please watch the Chapter 07 video below.
 
-`r knitr::include_url("http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/")`
+`r knitr::include_url("http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/", height = "500px")`
 
 **Data Management with `R`**
 

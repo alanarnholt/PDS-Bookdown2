@@ -4,7 +4,9 @@
 
 **Causation and Observational Studies^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b864280020ca6007237338314349d]**
 
-Please watch the [Chapter 17 Video](http://passiondrivenstatistics.com/2015/04/21/chapter-17-continued-rough-edit/).
+Please watch the Chapter 17 Video below.
+
+`r knitr::include_url("http://passiondrivenstatistics.com/2015/04/21/chapter-17-continued-rough-edit/", height = "500px")`
 
 Suppose the **observational study** described on the previous page were carried out, and researchers determined that the percentage succeeding with the combination drug/therapy method was highest, while the percentage succeeding with neither therapy nor drugs was lowest. In other words, suppose there is clear evidence of an association between method used and success rate. Could they then conclude that the combination drug/therapy method causes success more than using neither therapy nor a drug?
 
