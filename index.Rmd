@@ -15,7 +15,6 @@ knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning 
 
 # Copyright {-}
 
-Hey Indy!
 
 
 ```{block, type = "rmdlicense"}
