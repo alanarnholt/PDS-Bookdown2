@@ -1,0 +1,36 @@
+
+# Data Sets
+
+Please watch the [Chapter 02 video](http://passiondrivenstatistics.com/2015/06/02/chapter-2-draft-version/).
+
+
+Since we will not be producing data for this course, the first step of your project will be to choose a data set (from those made available) that offers the opportunity to conduct research on a general topic that will be of significant interest to you.
+
+A full list will be presented in class. Here are a few examples:
+
+**[The U.S. National Longitudinal Survey of Adolescent Health (AddHealth)](http://www.cpc.unc.edu/projects/addhealth)** is representative school-based survey of adolescents in grades 7-12 in the United States. (Wave I and Wave IV)
+
+**[The U.S. National Epidemiological Survey on Alcohol and Related Conditions (NESARC)](http://pubs.niaaa.nih.gov/publications/AA70/AA70.htm)** is a survey designed to determine the magnitude of alcohol use and psychiatric disorders in the U.S. population. It is a representative sample of the non-institutionalized population 18 years and older. 
+
+**The Mars Craters Study** (<http://craters.sjrdesign.net>) created by Stuart Robbins, presents a global database that includes over 300,000 Mars craters 1 km or larger. Heavily cratered terrain on Mars was created between 4.2 and 3.8 billion years ago during a period of heavy bombardment (i.e. impacts of asteroids, proto-planets, and comets).  Mars craters allow inferences into the ancient climate of Mars, and they add a key data point for the understanding of impact physics. 
+
+**[Integrated Post-secondary Education Data System (IPEDS)](http://nces.ed.gov/ipeds/datacenter/DataFiles.aspx)** is the primary source for data on colleges, universities, and technical and vocational postsecondary institutions in the United States.
+
+**[Outlook On Life Surveys (OOL)](http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/35348?q=outlook+on+LIfe&amp;searchSource=find-analyze-home&amp;sortBy=)**
+
+**Code Books**
+
+Before accessing any data, you will be reviewing the available codebooks (sometimes called **data dictionaries**). Codebooks commonly offer complete information regarding the data set (e.g. general topics addressed, questions and/or measurements used, and in some cases the frequency of responses or values). Reviewing a code book is always the first step in research based on existing data since 1) code books can be used to generate research questions; and 2) data is generally useless and uninterpretable without it. 
+
+The code book describes how the data are arranged in the computer file or files, what the various numbers and letters mean, and any special instructions on how to use the data properly. Like any other kind of book, some codebooks are better than others.
+
+![](./graphics/excodebook.jpg)
+
+**Selecting A Data Set**
+At this point, you should review the available codebooks for the data set that most interests you.  The [PDS](https://github.com/alanarnholt/PDS)^[https://github.com/alanarnholt/PDS] R package has the codebooks and data sets for this course.
+
+**Selecting A Data Set Assignment**
+Select a data set that you will work with. Add the abbreviated title of that data set (i.e. AddHealth, NESARC, Mars Crater, IPEDS, or OOL) to the README file of your GitHub repository.
+
+
+-------------------------

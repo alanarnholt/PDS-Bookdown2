@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
+  
+  
+  
+
+<meta name="author" content="Modified for use with R, GitHub, and Zotero">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="interpreting-the-scatterplot.html">
+<link rel="next" href="moderation.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Passion Driven Statistics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
+<li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sets.html"><a href="data-sets.html"><i class="fa fa-check"></i><b>2</b> Data Sets</a></li>
+<li class="chapter" data-level="3" data-path="data-architecture.html"><a href="data-architecture.html"><i class="fa fa-check"></i><b>3</b> Data Architecture</a></li>
+<li class="chapter" data-level="4" data-path="conducting-a-literature-review.html"><a href="conducting-a-literature-review.html"><i class="fa fa-check"></i><b>4</b> Conducting a Literature Review</a></li>
+<li class="chapter" data-level="5" data-path="writing-about-empirical-research.html"><a href="writing-about-empirical-research.html"><i class="fa fa-check"></i><b>5</b> Writing About Empirical Research</a></li>
+<li class="chapter" data-level="6" data-path="working-with-data.html"><a href="working-with-data.html"><i class="fa fa-check"></i><b>6</b> Working with Data</a></li>
+<li class="chapter" data-level="7" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>7</b> Data Management</a></li>
+<li class="chapter" data-level="8" data-path="graphing-one-variable-at-a-time.html"><a href="graphing-one-variable-at-a-time.html"><i class="fa fa-check"></i><b>8</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1" data-path="symmetric-distributions.html"><a href="symmetric-distributions.html"><i class="fa fa-check"></i><b>8.1</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.2" data-path="skewed-right-distributions.html"><a href="skewed-right-distributions.html"><i class="fa fa-check"></i><b>8.2</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.3" data-path="skewed-left-distributions.html"><a href="skewed-left-distributions.html"><i class="fa fa-check"></i><b>8.3</b> Skewed Left Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="graphing-relationships.html"><a href="graphing-relationships.html"><i class="fa fa-check"></i><b>9</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1" data-path="bivariate-graphing.html"><a href="bivariate-graphing.html"><i class="fa fa-check"></i><b>9.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.2" data-path="multivariate-graphing.html"><a href="multivariate-graphing.html"><i class="fa fa-check"></i><b>9.2</b> Multivariate Graphing</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>10</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="11" data-path="analysis-of-variance.html"><a href="analysis-of-variance.html"><i class="fa fa-check"></i><b>11</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1" data-path="the-anova-f-test.html"><a href="the-anova-f-test.html"><i class="fa fa-check"></i><b>11.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.2" data-path="the-idea-behind-the-anova-f-test.html"><a href="the-idea-behind-the-anova-f-test.html"><i class="fa fa-check"></i><b>11.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.3" data-path="finding-the-p-value.html"><a href="finding-the-p-value.html"><i class="fa fa-check"></i><b>11.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.4" data-path="making-conclusions-in-context.html"><a href="making-conclusions-in-context.html"><i class="fa fa-check"></i><b>11.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.5" data-path="post-hoc-tests.html"><a href="post-hoc-tests.html"><i class="fa fa-check"></i><b>11.5</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chi-square-test-of-independence.html"><a href="chi-square-test-of-independence.html"><i class="fa fa-check"></i><b>12</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>12.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="the-chi-square-test-for-independence.html"><a href="the-chi-square-test-for-independence.html"><i class="fa fa-check"></i><b>12.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.3" data-path="the-idea-of-the-chi-square-test.html"><a href="the-idea-of-the-chi-square-test.html"><i class="fa fa-check"></i><b>12.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.4" data-path="post-hoc-tests-1.html"><a href="post-hoc-tests-1.html"><i class="fa fa-check"></i><b>12.4</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="correlation-coefficient.html"><a href="correlation-coefficient.html"><i class="fa fa-check"></i><b>13</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1" data-path="interpreting-the-scatterplot.html"><a href="interpreting-the-scatterplot.html"><i class="fa fa-check"></i><b>13.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.2" data-path="the-correlation-coefficient.html"><a href="the-correlation-coefficient.html"><i class="fa fa-check"></i><b>13.2</b> The Correlation Coefficient</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="moderation.html"><a href="moderation.html"><i class="fa fa-check"></i><b>14</b> Moderation</a></li>
+<li class="chapter" data-level="15" data-path="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><i class="fa fa-check"></i><b>15</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+<li class="chapter" data-level="16" data-path="sampling-and-designing-studies.html"><a href="sampling-and-designing-studies.html"><i class="fa fa-check"></i><b>16</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1" data-path="designing-studies.html"><a href="designing-studies.html"><i class="fa fa-check"></i><b>16.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.2" data-path="identifying-study-design.html"><a href="identifying-study-design.html"><i class="fa fa-check"></i><b>16.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.3" data-path="experiments-vs-observational-studies.html"><a href="experiments-vs-observational-studies.html"><i class="fa fa-check"></i><b>16.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
+<li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
+<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-correlation-coefficient" class="section level2">
+<h2><span class="header-section-number">13.2</span> The Correlation Coefficient</h2>
+<p>The numerical measure that assesses the strength of a linear relationship is called the correlation coefficient, and is denoted by <span class="math inline">\(r\)</span>. We will:</p>
+<ul>
+<li>give a definition of the correlation <span class="math inline">\(r\)</span>,</li>
+<li>discuss the calculation of <span class="math inline">\(r\)</span>,</li>
+<li>explain how to interpret the value of <span class="math inline">\(r\)</span>, and</li>
+<li>talk about some of the properties of <span class="math inline">\(r\)</span>.</li>
+</ul>
+<p><strong>Definition:</strong> The <strong>correlation coefficient (<span class="math inline">\(r\)</span>)</strong> is a numerical measure that measures the strength and direction of a linear relationship between two quantitative variables.</p>
+<p><strong>Calculation:</strong> <span class="math inline">\(r\)</span> is calculated using the following formula: <span class="math inline">\(r = \frac{1}{n-1}\sum_{i=1}^n \left(\frac{x_i - \bar{x}}{s_x}\right)\left(\frac{y_i - \bar{y}}{s_y}\right)\)</span></p>
+<p>However, the calculation of the correlation (<span class="math inline">\(r\)</span>) is not the focus of this course. We will use a statistics package to calculate <span class="math inline">\(r\)</span> for us, and the <strong>emphasis</strong> of this course will be on the <strong>interpretation</strong> of its value.</p>
+<p><strong>Interpretation</strong></p>
+<p>Once we obtain the value of <span class="math inline">\(r\)</span>, its interpretation with respect to the strength of linear relationships is quite simple, as this walk-through will illustrate:</p>
+<div class="figure">
+<img src="graphics/linear17.gif" />
+
+</div>
+<p>In order to get a better sense for how the value of r relates to the strength of the linear relationship, take a look at <a href="http://www.seeingstatistics.com/seeing1999/reg/corr.html">this applet</a>.</p>
+<p>The slider bar at the bottom of the applet allows us to vary the value of the correlation coefficient (<span class="math inline">\(r\)</span>) between -1 and 1 in order to observe the effect on a scatterplot. (If the plot does not change on your browser when you move the slider, click along the bar instead to update the plot).</p>
+<p>Now that we understand the use of r as a numerical measure for assessing the direction and strength of linear relationships between quantitative variables, we will look at a few examples.</p>
+<p><strong>Example</strong></p>
+<p><strong>Highway Sign Visibility</strong></p>
+<p>Earlier, we used the scatterplot below to find a negative linear relationship between the age of a driver and the maximum distance at which a highway sign was legible. What about the strength of the relationship? It turns out that the correlation between the two variables is <span class="math inline">\(r = -0.8012447\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(signdist$Age, signdist$Distance)</code></pre></div>
+<pre><code>[1] -0.8012447</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(signdist$Age, signdist$Distance)</code></pre></div>
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  signdist$Age and signdist$Distance
+t = -7.086, df = 28, p-value = 1.041e-07
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.9013320 -0.6199255
+sample estimates:
+       cor 
+-0.8012447 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> signdist, <span class="kw">aes</span>(<span class="dt">x =</span> Age, <span class="dt">y =</span> Distance)) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;purple&quot;</span>) +
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Drivers Age (years)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Sign Legibility Distance (feet)&quot;</span>) +
+<span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> lm)</code></pre></div>
+<p><img src="pds_files/figure-html/unnamed-chunk-62-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Since <span class="math inline">\(r &lt; 0\)</span>, it confirms that the direction of the relationship is negative (although we really didn’t need <span class="math inline">\(r\)</span> to tell us that). Since <span class="math inline">\(r\)</span> is relatively close to -1, it suggests that the relationship is moderately strong. In context, the negative correlation confirms that the maximum distance at which a sign is legible generally decreases with age. Since the value of <span class="math inline">\(r\)</span> indicates that the linear relationship is moderately strong, but not perfect, we can expect the maximum distance to vary somewhat, even among drivers of the same age.</p>
+<p><strong>Example</strong></p>
+<p><strong>Statistics Courses</strong></p>
+<p>A statistics department is interested in tracking the progress of its students from entry until graduation. As part of the study, the department tabulates the performance of 10 students in an introductory course and in an upper-level course required for graduation. What is the relationship between the students’ course averages in the two courses? Here is the scatterplot for the data:</p>
+<div class="figure">
+<img src="graphics/linear4.gif" />
+
+</div>
+<p>The scatterplot suggests a relationship that is <strong>positive</strong> in direction, <strong>linear</strong> in form, and seems quite strong. The value of the correlation that we find between the two variables is <span class="math inline">\(r = 0.931\)</span>, which is very close to 1, and thus confirms that indeed the linear relationship is very strong.</p>
+<p><strong>Pearson Correlation</strong></p>
+<p>A correlation coefficient assesses the degree of linear relationship between two variables. It ranges from <span class="math inline">\(+1\)</span> to <span class="math inline">\(-1\)</span>. A correlation of <span class="math inline">\(+1\)</span> means that there is a perfect, positive, linear relationship between the two variables. A correlation of <span class="math inline">\(-1\)</span> means there is a perfect, negative linear relationship between the two variables. In both cases, knowing the value of one variable, you can perfectly predict the value of the second.</p>
+<p><strong>Pearson Correlation Assignment</strong></p>
+<p>Post syntax to your private GitHub repo used to generate a correlation coefficient along with corresponding output and a few sentences of interpretation.</p>
+<p><strong>Note:</strong> When we square <span class="math inline">\(r\)</span>, it tells us what proportion of the variability in one variable is described by variation in the second variable (aka <span class="math inline">\(R^2\)</span> or Coefficient of Determination).</p>
+<p><strong>Example of how to write results for correlation coefficient:</strong> Among daily, young adult smokers (my sample), the correlation between number of cigarettes smoked per day (quantitative) and number of nicotine dependence symptoms experienced in the past year (quantitative) was 0.2593625 (p &lt; 0.0001), suggesting that only 6.73% (i.e. 0.2593625 squared) of the variance in number of current nicotine dependence symptoms can be explained by number of cigarettes smoked per day.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> nesarc, <span class="kw">aes</span>(<span class="dt">x =</span> DailyCigsSmoked, <span class="dt">y =</span> NumberNicotineSymptoms)) +
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;lightblue&quot;</span>) +<span class="st"> </span>
+<span class="st">  </span><span class="kw">theme_bw</span>() +<span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Number of cigarettes smoked daily&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of nicotine dependence symptoms&quot;</span>)</code></pre></div>
+<p><img src="pds_files/figure-html/unnamed-chunk-63-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms)</code></pre></div>
+<pre><code>
+    Pearson&#39;s product-moment correlation
+
+data:  nesarc$DailyCigsSmoked and nesarc$NumberNicotineSymptoms
+t = 9.7311, df = 1313, p-value &lt; 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.2082242 0.3090866
+sample estimates:
+      cor 
+0.2593625 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">r &lt;-<span class="st"> </span><span class="kw">cor</span>(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, <span class="dt">use =</span> <span class="st">&quot;complete.obs&quot;</span>)
+r</code></pre></div>
+<pre><code>[1] 0.2593625</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">r^<span class="dv">2</span></code></pre></div>
+<pre><code>[1] 0.0672689</code></pre>
+<hr />
+
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="interpreting-the-scatterplot.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="moderation.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/alanarnholt/PDS-BookDown2/edit/master/13-chapter.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+
+# Working with Data
+
+Now that you have a research question, it is time to look at the data. Raw data consist of long lists of numbers and/or labels that are not very informative. Exploratory Data Analysis (EDA) is how we make sense of the data by converting them from their raw form to a more informative one. In particular, EDA consists of:
+
+* Organizing and summarizing the raw data,
+* Discovering important features and patterns in the data and any striking deviations from those patterns, and then
+* Interpreting our findings in the context of the problem
+
+We begin EDA by looking at one variable at a time (also known as *univariate analysis*).  In order to convert raw data into useful information we need to summarize and then examine the distribution of any variables of interest. By distribution of a variable, we mean:
+
+* What values the variable takes, and
+* How often the variable takes those values
+
+**Statistical Software**
+
+When working with data with more than just a few observations and/or variables requires specialized software. The use of syntax (or formal code) in the context of statistical software is a central skill that we will be teaching you in this course. We believe that it will greatly expand your capacity not only for statistical application but also for engaging in deeper levels of quantitative reasoning about data.
+
+**Writing Your First Program**
+
+Empirical research is all about making decisions (the best ones possible with the information at hand). Please watch the [Chapter 06 video](http://passiondrivenstatistics.com/2015/12/18/r-chapter-6/). This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).
+
+**Working with Data Lab**
+
+This week, you will learn how to call in a dataset, select the columns
+(i.e. variables), and possibly rows (i.e. observations), of interest, and
+run frequency distributions for your chosen variables. Read the `PDS` vignette to see examples of subsetting your data, renaming variables, coding missing values, collapsing categories, creating a factor from a numeric vector, aggregating variables using `ifelse`, creating a new variable with `mutate`, etc.  [RStudio](https://www.rstudio.com/) has several cheat sheets available at <https://www.rstudio.com/resources/cheatsheets/>.  You may find the [data wrangling cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) and the [data visualization cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf) useful for the working with data assignment.
+
+**Working with Data Assignment**
+
+Create an R Markdown file and push the file to GitHub showing:
+
+1. Your program
+2. The output that displays three of your categorical variables in frequency tables
+3. A few sentences describing the frequency tables.
+
+
+-----------------------

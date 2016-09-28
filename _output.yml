@@ -1,0 +1,13 @@
+bookdown::gitbook:
+  css: CSS/style.css
+  split_by: section
+  config:
+    toc:
+      collapse: subsection
+      before: |
+        <li><a href="./">Passion Driven Statistics</a></li>
+      after: |
+        <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+    edit:
+      link: https://github.com/alanarnholt/PDS-BookDown2/edit/master/%s
+      text: "Edit"

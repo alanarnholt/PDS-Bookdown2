@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
+  
+  
+  
+
+<meta name="author" content="Modified for use with R, GitHub, and Zotero">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="working-with-data.html">
+<link rel="next" href="graphing-one-variable-at-a-time.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Passion Driven Statistics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
+<li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sets.html"><a href="data-sets.html"><i class="fa fa-check"></i><b>2</b> Data Sets</a></li>
+<li class="chapter" data-level="3" data-path="data-architecture.html"><a href="data-architecture.html"><i class="fa fa-check"></i><b>3</b> Data Architecture</a></li>
+<li class="chapter" data-level="4" data-path="conducting-a-literature-review.html"><a href="conducting-a-literature-review.html"><i class="fa fa-check"></i><b>4</b> Conducting a Literature Review</a></li>
+<li class="chapter" data-level="5" data-path="writing-about-empirical-research.html"><a href="writing-about-empirical-research.html"><i class="fa fa-check"></i><b>5</b> Writing About Empirical Research</a></li>
+<li class="chapter" data-level="6" data-path="working-with-data.html"><a href="working-with-data.html"><i class="fa fa-check"></i><b>6</b> Working with Data</a></li>
+<li class="chapter" data-level="7" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>7</b> Data Management</a></li>
+<li class="chapter" data-level="8" data-path="graphing-one-variable-at-a-time.html"><a href="graphing-one-variable-at-a-time.html"><i class="fa fa-check"></i><b>8</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1" data-path="symmetric-distributions.html"><a href="symmetric-distributions.html"><i class="fa fa-check"></i><b>8.1</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.2" data-path="skewed-right-distributions.html"><a href="skewed-right-distributions.html"><i class="fa fa-check"></i><b>8.2</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.3" data-path="skewed-left-distributions.html"><a href="skewed-left-distributions.html"><i class="fa fa-check"></i><b>8.3</b> Skewed Left Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="graphing-relationships.html"><a href="graphing-relationships.html"><i class="fa fa-check"></i><b>9</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1" data-path="bivariate-graphing.html"><a href="bivariate-graphing.html"><i class="fa fa-check"></i><b>9.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.2" data-path="multivariate-graphing.html"><a href="multivariate-graphing.html"><i class="fa fa-check"></i><b>9.2</b> Multivariate Graphing</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>10</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="11" data-path="analysis-of-variance.html"><a href="analysis-of-variance.html"><i class="fa fa-check"></i><b>11</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1" data-path="the-anova-f-test.html"><a href="the-anova-f-test.html"><i class="fa fa-check"></i><b>11.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.2" data-path="the-idea-behind-the-anova-f-test.html"><a href="the-idea-behind-the-anova-f-test.html"><i class="fa fa-check"></i><b>11.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.3" data-path="finding-the-p-value.html"><a href="finding-the-p-value.html"><i class="fa fa-check"></i><b>11.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.4" data-path="making-conclusions-in-context.html"><a href="making-conclusions-in-context.html"><i class="fa fa-check"></i><b>11.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.5" data-path="post-hoc-tests.html"><a href="post-hoc-tests.html"><i class="fa fa-check"></i><b>11.5</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chi-square-test-of-independence.html"><a href="chi-square-test-of-independence.html"><i class="fa fa-check"></i><b>12</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>12.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="the-chi-square-test-for-independence.html"><a href="the-chi-square-test-for-independence.html"><i class="fa fa-check"></i><b>12.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.3" data-path="the-idea-of-the-chi-square-test.html"><a href="the-idea-of-the-chi-square-test.html"><i class="fa fa-check"></i><b>12.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.4" data-path="post-hoc-tests-1.html"><a href="post-hoc-tests-1.html"><i class="fa fa-check"></i><b>12.4</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="correlation-coefficient.html"><a href="correlation-coefficient.html"><i class="fa fa-check"></i><b>13</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1" data-path="interpreting-the-scatterplot.html"><a href="interpreting-the-scatterplot.html"><i class="fa fa-check"></i><b>13.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.2" data-path="the-correlation-coefficient.html"><a href="the-correlation-coefficient.html"><i class="fa fa-check"></i><b>13.2</b> The Correlation Coefficient</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="moderation.html"><a href="moderation.html"><i class="fa fa-check"></i><b>14</b> Moderation</a></li>
+<li class="chapter" data-level="15" data-path="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><i class="fa fa-check"></i><b>15</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+<li class="chapter" data-level="16" data-path="sampling-and-designing-studies.html"><a href="sampling-and-designing-studies.html"><i class="fa fa-check"></i><b>16</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1" data-path="designing-studies.html"><a href="designing-studies.html"><i class="fa fa-check"></i><b>16.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.2" data-path="identifying-study-design.html"><a href="identifying-study-design.html"><i class="fa fa-check"></i><b>16.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.3" data-path="experiments-vs-observational-studies.html"><a href="experiments-vs-observational-studies.html"><i class="fa fa-check"></i><b>16.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
+<li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
+<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-management" class="section level1">
+<h1><span class="header-section-number">7</span> Data Management<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></h1>
+<p>Examining frequency distributions for each of your variables is the key to further guiding the decision making involved in quantitative research.</p>
+<p><strong>EXAMPLE:</strong></p>
+<p>A random sample of 1,200 U.S. college students were asked the following questions as part of a larger survey: “What is your perception of your own body? Do you feel that you are overweight, underweight, or about right?” The following table shows part of the data (5 of the 1200 observations);</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">STUDENT</th>
+<th align="center">BODY IMAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Student 25</td>
+<td align="center">Overweight</td>
+</tr>
+<tr class="even">
+<td align="center">Student 26</td>
+<td align="center">About Right</td>
+</tr>
+<tr class="odd">
+<td align="center">Student 27</td>
+<td align="center">Underweight</td>
+</tr>
+<tr class="even">
+<td align="center">Student 28</td>
+<td align="center">About Right</td>
+</tr>
+<tr class="odd">
+<td align="center">Student 29</td>
+<td align="center">About Right</td>
+</tr>
+</tbody>
+</table>
+<p>Here is some information that would be interesting to get from these data:</p>
+<ul>
+<li>What percentage of the sampled students fall into each category?</li>
+<li>How are students divided across the three body image categories?</li>
+</ul>
+<p>Are they equally divided? If not, do the percentages follow some other kind of pattern?</p>
+<p>There is no way that we can answer these questions by looking at the raw data, which are in the form of a long list of 1,200 responses and thus not very useful. However, both these questions will be easily answered once we summarize and look at the frequency distribution of the variable <code>BodyImage</code> (i.e., once we summarize how often each of the categories occurs).</p>
+<p>In order to summarize the distribution of a categorical variable, we ask our statistical software program to create a table of the different values (categories) the variable takes, how many times each value occurs (count), and, more importantly, how often each value occurs (percentages). Here is the table (i.e. frequency distribution) for our example:</p>
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 7.1: </span>Body Image Distribution</caption>
+<thead>
+<tr class="header">
+<th align="center">CATEGORY</th>
+<th align="center">COUNT</th>
+<th align="center">PERCENTAGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">About Right</td>
+<td align="center">855</td>
+<td align="center">71.3%</td>
+</tr>
+<tr class="even">
+<td align="center">Overweight</td>
+<td align="center">235</td>
+<td align="center">19.6%</td>
+</tr>
+<tr class="odd">
+<td align="center">Underweight</td>
+<td align="center">110</td>
+<td align="center">9.2%</td>
+</tr>
+<tr class="even">
+<td align="center">Total</td>
+<td align="center">1200</td>
+<td align="center">100%</td>
+</tr>
+</tbody>
+</table>
+<p>Please watch the <a href="http://passiondrivenstatistics.com/2016/01/08/r-chapter-7/">Chapter 07 video</a>.</p>
+<p><strong>Data Management with <code>R</code></strong></p>
+<p>During the class session, we will begin to work through how to make decisions about data management and how to put those decisions into action.</p>
+<p>An understanding of basic operations to be used with your statistical software is a good place to start. In <code>R</code>, logical operators include <code>!</code> (not), <code>&amp;</code> and <code>&amp;&amp;</code> (logical AND), <code>|</code> and <code>||</code> (logical OR). Relational operators in <code>R</code> include <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code> (less than or equal), <code>==</code> (vector equality), and <code>!=</code> (not equal).</p>
+<p><em>Examples:</em></p>
+<p><em>1. Need to identify missing data</em></p>
+<p>Often, you must define the response categories that represent missing data. For example, if the number 9 is used to represent a missing value, you must either designate in your program that this value represents missingness or else you must recode the variable into a missing data character that your statistical software recognizes. If you do not, the 9 will be treated as a real/meaningful value and will be included in each of your analyses.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span>title_of_data_set$VAR1[title_of_data_set$VAR1 ==<span class="st"> </span><span class="dv">9</span>] &lt;-<span class="st"> </span><span class="ot">NA</span></code></pre></div>
+<p><em>2. Need to recode responses to “no” based on skip patterns</em></p>
+<p>There are a number of skip outs in some data sets. For example, if we ask someone whether or not they have ever used marijuana, and they say “no”, it would not make sense to ask them more detailed questions about their marijuana use (e.g. quantity, frequency, onset, ￼￼impairment, etc.). When analyzing more detailed questions regarding marijuana (e.g. have you ever smoked marijuana daily for a month or more?), those individuals that never used the substance may show up as missing data. Since they have never used marijuana, we can assume that their answer is “no”, they have never smoked marijuana daily. This would need to be explicitly recoded. Note that we commonly code a no as 0 and a yes as 1.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span>title_of_data_set$VAR1[<span class="kw">is.na</span>(title_of_data_set$VAR1)] &lt;-<span class="st"> </span><span class="dv">0</span></code></pre></div>
+<p><em>3. Need to collapse response categories</em></p>
+<p>If a variable has many response categories, it can be difficult to interpret the statistical analyses in which it is used. Alternatively, there may be too few subjects or observations identified by one or more response categories to allow for a successful analysis. In these cases, you would need to collapse across categories. Consider the variable <code>S1Q6A</code> from the data frame <code>NESARC</code> which has 14 levels that record the highest level of education of the participant. To collapse the categories into a dichotomous variable that indicates the presence of a high school degree, use the <code>ifelse</code> function. The levels <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, <code>6</code>, and <code>7</code> of the variable <code>S1Q6A</code> correspond to education levels less than completing high school.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span><span class="kw">library</span>(PDS)
+&gt;<span class="st"> </span>NESARC$HS_DEGREE &lt;-<span class="st"> </span><span class="kw">factor</span>(<span class="kw">ifelse</span>(NESARC$S1Q6A %in%<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;3&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;5&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;7&quot;</span>), <span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>))
+&gt;<span class="st"> </span><span class="kw">summary</span>(NESARC$HS_DEGREE)</code></pre></div>
+<pre><code>   No   Yes 
+ 7849 35244 </code></pre>
+<p><em>4. Need to aggregate variables</em></p>
+<p>In many cases, you will want to combine multiple variables into one. Consider creating create a new variable <code>DepressLife</code> which is <code>Yes</code> if the variable <code>MAJORLIFE</code> or <code>DYSLIFE</code> is a 1 (data frame <code>NESARC</code>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span>NESARC$DepressLife &lt;-<span class="st"> </span><span class="kw">factor</span>(<span class="kw">ifelse</span>( (NESARC$MAJORDEPLIFE ==<span class="st"> </span><span class="dv">1</span> |<span class="st"> </span>NESARC$DYSLIFE ==<span class="st"> </span><span class="dv">1</span>), <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>))
+&gt;<span class="st"> </span><span class="kw">summary</span>(NESARC$DepressLife)</code></pre></div>
+<pre><code>   No   Yes 
+34894  8199 </code></pre>
+<p><em>5. Need to create continuous variables</em></p>
+<p>If you are working with a number of items that represent a single construct, it may be useful to create a composite variable/score. For example, I want to use a list of nicotine dependence symptoms meant to address the presence or absence of nicotine dependence (e.g. tolerance, withdrawal, craving, etc.). Rather than using a dichotomous variable (i.e. nicotine dependence present/absent), I want to examine the construct as a dimensional scale (i.e. number of nicotine dependence symptoms). In this case, I would want to recode each symptom variable so that <code>yes=1</code> and <code>no=0</code> and then sum the items so that they represent one composite score.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span>nd_sum &lt;-<span class="st"> </span>title_of_data_set$nd_symptom1 +<span class="st"> </span>title_of_data_set$nd_symptom2 +<span class="st"> </span>title_of_data_set$nd_symptom3
+&gt;<span class="st"> </span>title_of_data_set$nd_sum &lt;-<span class="st"> </span>nd_sum</code></pre></div>
+<p><em>6. Labeling variable responses/values</em></p>
+<p>Given that nominal and ordinal variables have, or are given numeric response values (i.e. dummy codes), it can be useful to label those values so that the labels are displayed in your output.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span><span class="kw">levels</span>(title_of_data_set$VARIABLE) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;value&quot;</span>, <span class="st">&quot;value&quot;</span>)</code></pre></div>
+<p><em>7. Need to further subset the sample</em></p>
+<p>When using large data sets, it is often necessary to subset the data so that you are including only those observations that can assist in answering your particular research question. In these cases, you may want to select your own sample from within the survey’s sampling frame. For example, if you are interested in identifying demographic predictors of depression among Type II diabetes patients, you would plan to subset the data to subjects endorsing Type II Diabetes.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">&gt;<span class="st"> </span>title_of_subsetted_data &lt;-<span class="st"> </span>title_of_data_set[<span class="st">&quot;diabetes2&quot;</span> ==<span class="st"> </span><span class="dv">1</span>, ]
+&gt;<span class="st"> </span><span class="co"># OR using dplyr</span>
+<span class="er">&gt;</span><span class="st"> </span><span class="kw">library</span>(dplyr)
+&gt;<span class="st"> </span>title_of_subsetted_data &lt;-<span class="st"> </span><span class="kw">filter</span>(title_of_data_set, <span class="st">&quot;diabetes2&quot;</span> ==<span class="st"> </span><span class="dv">1</span>)</code></pre></div>
+<p>Three different approaches to subsetting data will be illustrated. The first approach is to use the <code>dplyr</code> function <code>filter</code>; the second approach is to use indices; and the third approach is to use the function <code>subset</code>. Consider creating a subset of the <code>NESARC</code> data set where a person indicates</p>
+<ol style="list-style-type: decimal">
+<li>He/she has smoked over 100 cigarettes (<code>S3AQ1A == 1</code>)</li>
+<li>He/she has smoked in the past year (<code>CHECK321 == 1</code>)</li>
+<li>He/she has typically smoked every day over the last year (<code>S3AQ3B1 == 1</code>)</li>
+<li>He/she is less than or equal to 25 years old (<code>AGE &lt;= 25</code>)</li>
+</ol>
+<p>The first approach uses the <code>filter</code> function with the <code>%&gt;%</code> function. Although it is not a requirement, the data frame <code>NESARC</code> is converted to a <code>data frame tbl</code> per the advice given in the <code>dplyr</code> vignette.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PDS)
+<span class="kw">library</span>(dplyr)
+NESARCsub1 &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(NESARC) %&gt;%
+<span class="st">  </span><span class="kw">filter</span>(S3AQ1A ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>CHECK321 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>S3AQ3B1 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>AGE &lt;=<span class="st"> </span><span class="dv">25</span>)
+<span class="kw">dim</span>(NESARCsub1)</code></pre></div>
+<pre><code>[1] 1320 3010</code></pre>
+<p>The second approach uses standard indexing.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">NESARCsub2 &lt;-<span class="st"> </span>NESARC[NESARC$S3AQ1A ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>NESARC$CHECK321 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>
+<span class="st">                       </span>NESARC$S3AQ3B1 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>NESARC$AGE &lt;=<span class="st"> </span><span class="dv">25</span>, ]
+<span class="kw">dim</span>(NESARCsub2)</code></pre></div>
+<pre><code>[1] 1320 3010</code></pre>
+<p>The third approach uses the <code>subset</code> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">NESARCsub3 &lt;-<span class="st"> </span><span class="kw">subset</span>(NESARC, <span class="dt">subset =</span> S3AQ1A ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>CHECK321 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>
+<span class="st">                       </span>S3AQ3B1 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>AGE &lt;=<span class="st"> </span><span class="dv">25</span>)
+<span class="kw">dim</span>(NESARCsub3)</code></pre></div>
+<pre><code>[1] 1320 3010</code></pre>
+<p><strong>NOTE:</strong> Often, you will need to create groups or sub-samples from the data set for the purpose of making comparisons. It is important to be certain that the groups that you would like to compare are of adequate size and number. For example, if you were interested in comparing complications of depression in parents who had lost a child through miscarriage vs. parents who had lost a child in the first year of life, it would be important to have large enough groups of each. It would not be appropriate to attempt to compare 5000 observations in the miscarriage group to only 9 observations in the first year group.</p>
+<p><strong>Extended Example</strong></p>
+<p>Use the data frame <code>NESARC</code> and create a new variable (<code>NumberNicotineSymptoms</code>) that is the sum of all of the nicotine dependence symptoms where a person indicates</p>
+<ol style="list-style-type: decimal">
+<li>He/she has smoked over 100 cigarettes (<code>S3AQ1A == 1</code>)</li>
+<li>He/she has smoked in the past year (<code>CHECK321 == 1</code>)</li>
+<li>He/she has typically smoked every day over the last year (<code>S3AQ3B1 == 1</code>)</li>
+<li>He/she is less than or equal to 25 years old (<code>AGE &lt;= 25</code>)</li>
+</ol>
+<p>The following code selects the 67 variables that deal with nicotine dependence using the <code>select</code> and <code>contains</code> functions from <code>dplyr</code>. The <code>ifelse</code> function is used in the <code>myfix</code> function to convert values of 2 and 9 to 0.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PDS)
+<span class="kw">library</span>(dplyr)
+DF &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(NESARC) %&gt;%
+<span class="st">  </span><span class="kw">filter</span>(S3AQ1A ==<span class="dv">1</span> &amp;<span class="st"> </span>S3AQ3B1 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>CHECK321 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>AGE &lt;=<span class="st"> </span><span class="dv">25</span>) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(<span class="kw">contains</span>(<span class="st">&quot;S3AQ8&quot;</span>))
+myfix &lt;-<span class="st"> </span>function(x){<span class="kw">ifelse</span>(x %in%<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">9</span>), <span class="dv">0</span>, <span class="kw">ifelse</span>(x ==<span class="st"> </span><span class="dv">1</span>, <span class="dv">1</span>, <span class="ot">NA</span>))}
+DF2 &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">apply</span>(DF, <span class="dv">2</span>, myfix))
+DF2$NumberNicotineSymptoms &lt;-<span class="st"> </span><span class="kw">apply</span>(DF2, <span class="dv">1</span>, sum, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)
+nesarc &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(NESARC) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(S3AQ1A ==<span class="dv">1</span> &amp;<span class="st"> </span>S3AQ3B1 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>CHECK321 ==<span class="st"> </span><span class="dv">1</span> &amp;<span class="st"> </span>AGE &lt;=<span class="st"> </span><span class="dv">25</span>) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">rename</span>(<span class="dt">Ethnicity =</span> ETHRACE2A, <span class="dt">Age =</span> AGE, <span class="dt">MajorDepression =</span> MAJORDEPLIFE, 
+         <span class="dt">Sex =</span> SEX, <span class="dt">TobaccoDependence =</span> TAB12MDX, <span class="dt">DailyCigsSmoked =</span> S3AQ3C1,
+         <span class="dt">AlcoholAD =</span> ALCABDEPP12DX) %&gt;%<span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(Ethnicity, Age, MajorDepression, TobaccoDependence, DailyCigsSmoked, Sex, AlcoholAD)
+nesarc &lt;-<span class="st"> </span><span class="kw">data.frame</span>(nesarc, <span class="dt">NumberNicotineSymptoms =</span> DF2$NumberNicotineSymptoms)
+nesarc &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(nesarc)
+<span class="co"># Code 99 properly</span>
+nesarc$DailyCigsSmoked[nesarc$DailyCigsSmoked ==<span class="st"> </span><span class="dv">99</span>] &lt;-<span class="st"> </span><span class="ot">NA</span>
+<span class="co"># Create smoking categories</span>
+nesarc$DCScat &lt;-<span class="st"> </span><span class="kw">cut</span>(nesarc$DailyCigsSmoked, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">98</span>), <span class="dt">include.lowest =</span> <span class="ot">FALSE</span>)
+<span class="co"># Label factors</span>
+nesarc$Ethnicity &lt;-<span class="st"> </span><span class="kw">factor</span>(nesarc$Ethnicity, 
+                           <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;Caucasian&quot;</span>, <span class="st">&quot;African American&quot;</span>, 
+                                      <span class="st">&quot;Native American&quot;</span>, <span class="st">&quot;Asian&quot;</span>, <span class="st">&quot;Hispanic&quot;</span>))
+nesarc$TobaccoDependence &lt;-<span class="st"> </span><span class="kw">factor</span>(nesarc$TobaccoDependence, 
+                                   <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;No Nicotine Dependence&quot;</span>, 
+                                              <span class="st">&quot;Nicotine Dependence&quot;</span>))
+nesarc$Sex &lt;-<span class="st"> </span><span class="kw">factor</span>(nesarc$Sex, <span class="dt">labels =</span><span class="kw">c</span>(<span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Male&quot;</span>))
+nesarc$MajorDepression &lt;-<span class="st"> </span><span class="kw">factor</span>(nesarc$MajorDepression, 
+                                 <span class="dt">labels =</span><span class="kw">c</span>(<span class="st">&quot;No Depression&quot;</span>, <span class="st">&quot;Yes Depression&quot;</span>))
+nesarc$AlcoholAD &lt;-<span class="st"> </span><span class="kw">factor</span>(nesarc$AlcoholAD, <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;No Alcohol&quot;</span>, <span class="st">&quot;Alcohol Abuse&quot;</span>, <span class="st">&quot;Alcohol Dependence&quot;</span>, <span class="st">&quot;Alcohol Abuse and Dependence&quot;</span>))
+<span class="co">#</span>
+<span class="kw">dim</span>(nesarc)</code></pre></div>
+<pre><code>[1] 1320    9</code></pre>
+<p>See the <code>PDS</code> vignette for additional examples.</p>
+<p><strong>Data Management Assignment</strong></p>
+<p>Push to your private repository on GitHub:</p>
+<ol style="list-style-type: decimal">
+<li>A program that manages your data.</li>
+<li>Output that displays 3 of your secondary (i.e. data managed) variables as frequency tables.</li>
+</ol>
+<hr />
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b847680020ca600310bf43153f582</a><a href="data-management.html#fnref4">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="working-with-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="graphing-one-variable-at-a-time.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/alanarnholt/PDS-BookDown2/edit/master/07-chapter.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
+  
+  
+  
+
+<meta name="author" content="Modified for use with R, GitHub, and Zotero">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html">
+<link rel="next" href="designing-studies.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Passion Driven Statistics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
+<li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sets.html"><a href="data-sets.html"><i class="fa fa-check"></i><b>2</b> Data Sets</a></li>
+<li class="chapter" data-level="3" data-path="data-architecture.html"><a href="data-architecture.html"><i class="fa fa-check"></i><b>3</b> Data Architecture</a></li>
+<li class="chapter" data-level="4" data-path="conducting-a-literature-review.html"><a href="conducting-a-literature-review.html"><i class="fa fa-check"></i><b>4</b> Conducting a Literature Review</a></li>
+<li class="chapter" data-level="5" data-path="writing-about-empirical-research.html"><a href="writing-about-empirical-research.html"><i class="fa fa-check"></i><b>5</b> Writing About Empirical Research</a></li>
+<li class="chapter" data-level="6" data-path="working-with-data.html"><a href="working-with-data.html"><i class="fa fa-check"></i><b>6</b> Working with Data</a></li>
+<li class="chapter" data-level="7" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>7</b> Data Management</a></li>
+<li class="chapter" data-level="8" data-path="graphing-one-variable-at-a-time.html"><a href="graphing-one-variable-at-a-time.html"><i class="fa fa-check"></i><b>8</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1" data-path="symmetric-distributions.html"><a href="symmetric-distributions.html"><i class="fa fa-check"></i><b>8.1</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.2" data-path="skewed-right-distributions.html"><a href="skewed-right-distributions.html"><i class="fa fa-check"></i><b>8.2</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.3" data-path="skewed-left-distributions.html"><a href="skewed-left-distributions.html"><i class="fa fa-check"></i><b>8.3</b> Skewed Left Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="graphing-relationships.html"><a href="graphing-relationships.html"><i class="fa fa-check"></i><b>9</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1" data-path="bivariate-graphing.html"><a href="bivariate-graphing.html"><i class="fa fa-check"></i><b>9.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.2" data-path="multivariate-graphing.html"><a href="multivariate-graphing.html"><i class="fa fa-check"></i><b>9.2</b> Multivariate Graphing</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>10</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="11" data-path="analysis-of-variance.html"><a href="analysis-of-variance.html"><i class="fa fa-check"></i><b>11</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1" data-path="the-anova-f-test.html"><a href="the-anova-f-test.html"><i class="fa fa-check"></i><b>11.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.2" data-path="the-idea-behind-the-anova-f-test.html"><a href="the-idea-behind-the-anova-f-test.html"><i class="fa fa-check"></i><b>11.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.3" data-path="finding-the-p-value.html"><a href="finding-the-p-value.html"><i class="fa fa-check"></i><b>11.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.4" data-path="making-conclusions-in-context.html"><a href="making-conclusions-in-context.html"><i class="fa fa-check"></i><b>11.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.5" data-path="post-hoc-tests.html"><a href="post-hoc-tests.html"><i class="fa fa-check"></i><b>11.5</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chi-square-test-of-independence.html"><a href="chi-square-test-of-independence.html"><i class="fa fa-check"></i><b>12</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>12.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="the-chi-square-test-for-independence.html"><a href="the-chi-square-test-for-independence.html"><i class="fa fa-check"></i><b>12.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.3" data-path="the-idea-of-the-chi-square-test.html"><a href="the-idea-of-the-chi-square-test.html"><i class="fa fa-check"></i><b>12.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.4" data-path="post-hoc-tests-1.html"><a href="post-hoc-tests-1.html"><i class="fa fa-check"></i><b>12.4</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="correlation-coefficient.html"><a href="correlation-coefficient.html"><i class="fa fa-check"></i><b>13</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1" data-path="interpreting-the-scatterplot.html"><a href="interpreting-the-scatterplot.html"><i class="fa fa-check"></i><b>13.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.2" data-path="the-correlation-coefficient.html"><a href="the-correlation-coefficient.html"><i class="fa fa-check"></i><b>13.2</b> The Correlation Coefficient</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="moderation.html"><a href="moderation.html"><i class="fa fa-check"></i><b>14</b> Moderation</a></li>
+<li class="chapter" data-level="15" data-path="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><i class="fa fa-check"></i><b>15</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+<li class="chapter" data-level="16" data-path="sampling-and-designing-studies.html"><a href="sampling-and-designing-studies.html"><i class="fa fa-check"></i><b>16</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1" data-path="designing-studies.html"><a href="designing-studies.html"><i class="fa fa-check"></i><b>16.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.2" data-path="identifying-study-design.html"><a href="identifying-study-design.html"><i class="fa fa-check"></i><b>16.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.3" data-path="experiments-vs-observational-studies.html"><a href="experiments-vs-observational-studies.html"><i class="fa fa-check"></i><b>16.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
+<li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
+<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sampling-and-designing-studies" class="section level1">
+<h1><span class="header-section-number">16</span> Sampling and Designing Studies</h1>
+<p>Suppose you want to determine the musical preferences of all students at your university, based on a sample of students. Here are some examples of the many possible ways to pursue this problem.<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a></p>
+<p><strong>Example 1</strong></p>
+<p>Post a music-lovers’ survey on a university IInternet bulletin board, asking students to vote for their favorite type of music.</p>
+<p>This is an example of a <strong>volunteer sample</strong>, where individuals have selected themselves to be included. Such a sample is almost guaranteed to be <strong>biased</strong>. In general, volunteer samples tend to be comprised of individuals who have a particularly strong opinion about an issue, and are looking for an opportunity to voice it. Whether the variable’s values obtained from such a sample are over- or under-stated, and to what extent, cannot be determined. As a result, data obtained from a voluntary response sample is quite useless when you think about the “Big Picture,” since the sampled individuals only provide information about themselves, and <strong>we cannot generalize</strong> to any larger group at all.</p>
+<p><strong>Note</strong></p>
+<p>Comment: It should be mentioned that in some cases volunteer samples are the only ethical way to obtain a sample. In medical studies, for example, in which new treatments are tested, subjects must choose to participate by signing a consent form that highlights the potential risks and benefits. As we will discuss in the next module, a volunteer sample is not so problematic in a study conducted for the purpose of comparing several treatments.</p>
+<p><strong>Example 2</strong></p>
+<p>Stand outside the Student Union, across from the Fine Arts Building, and ask students passing by to respond to your question about musical preference.</p>
+<p>This is an example of a <strong>convenience sample</strong>, where individuals happen to be at the right time and place to suit the schedule of the researcher. Depending on what variable is being studied, it may be that a convenience sample provides a fairly representative group. However, there are often subtle reasons why the sample’s results are <strong>biased</strong>. In this case, the proximity to the Fine Arts Building might result in a disproportionate number of students favoring classical music. A convenience sample may also be susceptible to bias because certain types of individuals are more likely to be selected than others. In the extreme, some convenience samples are designed in such a way that certain individuals have no chance at all of being selected, as in the next example.</p>
+<p><strong>Example 3</strong></p>
+<p>Ask your professors for email rosters of all the students in your classes. Randomly sample some addresses, and email those students with your question about musical preference.</p>
+<p>Here is a case where the <strong>sampling frame</strong>—list of potential individuals to be sampled—does not match the population of interest. The population of interest consists of all students at the university, whereas the sampling frame consists of only your classmates. There may be <strong>bias</strong> arising because of this discrepancy. For example, students with similar majors will tend to take the same classes as you, and their musical preferences may also be somewhat different from those of the general population of students. It is always best to have the sampling frame match the population as closely as possible.</p>
+<p><strong>Example 4</strong></p>
+<p>Obtain a student directory with email addresses of all the university’s students, and send the music poll to every 50th name on the list.</p>
+<p>This is called <strong>systematic sampling</strong>. It may not be subject to any clear bias, but it would not be as safe as taking a random sample.</p>
+<p>If individuals are sampled completely at random, and without replacement, then each group of a given size is just as likely to be selected as all the other groups of that size. This is called a <strong>simple random sample (SRS)</strong>. In contrast, a systematic sample would not allow for sibling students to be selected, because of having the same last name. In a simple random sample, sibling students would have just as much of a chance of both being selected as any other pair of students. Therefore, there may be subtle sources of bias in using a systematic sampling plan.</p>
+<p><strong>Example 5</strong></p>
+<p>Obtain a student directory with email addresses of <strong>all</strong> the university’s students, and send your music poll to a <strong>simple random sample</strong> of students. As long as all of the students respond, then the sample is <strong>not subject to any bias</strong>, and should succeed in being representative of the population of interest.</p>
+<p>But what if only 40% of those selected email you back with their vote?</p>
+<p>The results of this poll would not necessarily be representative of the population, because of the potential problems associated with <strong>volunteer response</strong>. Since individuals are not compelled to respond, often a relatively small subset take the trouble to participate. Volunteer response is not as problematic as a volunteer sample (presented in example 1 above), but there is still a danger that those who do respond are different from those who don’t, with respect to the variable of interest. An improvement would be to follow up with a second email, asking politely for students’ cooperation. This may boost the response rate, resulting in a sample that is fairly representative of the entire population of interest, and it may be the best that you can do, under the circumstances. <strong>Nonresponse</strong> is still an issue, but at least you have managed to reduce its impact on your results.</p>
+<p>So far we’ve discussed several sampling plans, and determined that a simple random sample is the only one we discussed that is not subject to any bias.</p>
+<p>A simple random sample is the easiest way to base a selection on randomness. There are other, more sophisticated, sampling techniques that utilize randomness that are often preferable in real-life circumstances. Any plan that relies on random selection is called a <strong>probability sampling plan (or technique)</strong>. The following three probability sampling plans are among the most commonly used:</p>
+<ul>
+<li><p><strong>Simple Random Sampling</strong> is, as the name suggests, the simplest probability sampling plan. It is equivalent to “selecting names out of a hat.” Each individual as the same chance of being selected.</p></li>
+<li><p><strong>Cluster Sampling</strong>—This sampling technique is used when our population is naturally divided into groups (which we call clusters). For example, all the students in a university are divided into majors; all the nurses in a certain city are divided into hospitals; all registered voters are divided into precincts (election districts). In cluster sampling, we take a random sample of clusters, and use all the individuals within the selected clusters as our sample. For example, in order to get a sample of high-school seniors from a certain city, you choose 3 high schools at random from among all the high schools in that city, and use all the high school seniors in the three selected high schools as your sample.</p></li>
+<li><p><strong>Stratified Sampling</strong>—Stratified sampling is used when our population is naturally divided into sub-populations, which we call stratum (plural: strata). For example, all the students in a certain college are divided by gender or by year in college; all the registered voters in a certain city are divided by race. In stratified sampling, we choose a simple random sample from each stratum, and our sample consists of all these simple random samples put together. For example, in order to get a random sample of high-school seniors from a certain city, we choose a random sample of 25 seniors from each of the high schools in that city. Our sample consists of all these samples put together.</p></li>
+</ul>
+<p>Each of those probability sampling plans, if applied correctly, are not subject to any bias, and thus produce samples that represent well the population from which they were drawn.</p>
+<p><strong>Comment: Cluster vs. Stratified</strong></p>
+<p>Students sometimes get confused about the difference between cluster sampling and stratified sampling. Even though both methods start out with the population somehow divided into groups, the two methods are very different. In cluster sampling, we take a random sample of whole groups of individuals, while in stratified sampling we take a simple random sample from each group. For example, say we want to conduct a study on the sleeping habits of undergraduate students at a certain university, and need to obtain a sample. The students are naturally divided by majors, and let’s say that in this university there are 40 different majors. In cluster sampling, we would randomly choose, say, 5 majors (groups) out of the 40, and use all the students in these five majors as our sample. In stratified sampling, we would obtain a random sample of, say, 10 students from each of the 40 majors (groups), and use the 400 chosen students as the sample. Clearly in this example, stratified sampling is much better, since the major of the student might have an effect on the student’s sleeping habits, and so we would like to make sure that we have representatives from all the different majors. We’ll stress this point again following the example and activity.</p>
+<p><strong>Example</strong></p>
+<p>Suppose you would like to study the job satisfaction of hospital nurses in a certain city based on a sample. Besides taking a simple random sample, here are two additional ways to obtain such a sample.</p>
+<ol style="list-style-type: decimal">
+<li><p>Suppose that the city has 10 hospitals. Choose one of the 10 hospitals at random and interview all the nurses in that hospital regarding their job satisfaction. This is an example of cluster sampling, in which the hospitals are the clusters.</p></li>
+<li><p>Choose a random sample of 50 nurses from each of the 10 hospitals and interview these 50 * 10 = 500 regarding their job satisfaction. This is an example of stratified sampling, in which each hospital is a stratum.</p></li>
+</ol>
+<p><strong>Cluster or Stratified—which one is better?</strong></p>
+<p>Let’s go back and revisit the job satisfaction of hospital nurses example and discuss the pros and cons of the two sampling plans that are presented. Certainly, it will be much easier to conduct the study using the cluster sample, since all interviews are conducted in one hospital as opposed to the stratified sample, in which the interviews need to be conducted in 10 different hospitals. However, the hospital that a nurse works in probably has a direct impact on his/her job satisfaction, and in that sense, getting data from just one hospital might provide biased results. In this case, it will be very important to have representation from all the city hospitals, and therefore the stratified sample is definitely preferable. On the other hand, say that instead of job satisfaction, our study focuses on the age or weight of hospital nurses.</p>
+<p>In this case, it is probably not as crucial to get representation from the different hospitals, and therefore the more easily obtained cluster sample might be preferable.</p>
+<p><strong>Comment</strong>:</p>
+<p>Another commonly used sampling technique is <strong>multistage sampling</strong>, which is essentially a “complex form” of cluster sampling. When conducting cluster sampling, it might be unrealistic, or too expensive to sample all the individuals in the chosen clusters. In cases like this, it would make sense to have another stage of sampling, in which you choose a sample from each of the randomly selected clusters, hence the term multistage sampling.</p>
+<p>For example, say you would like to study the exercise habits of college students in the state of California. You might choose 8 colleges (clusters) at random, but you are certainly not going to use all the students in these 8 colleges as your sample. It is simply not realistic to conduct your study that way. Instead you move on to stage 2 of your sampling plan, in which you choose a random sample of 100 males and a random sample of 100 females from each of the 8 colleges you selected in stage 1.</p>
+<p>So in total you have <span class="math inline">\(8 \times (100+100) = 1,600\)</span> college students in your sample.</p>
+<p>In this case, stage 1 was a cluster sample of 8 colleges and stage 2 was a stratified sample within each college where the stratum was gender.</p>
+<p>Multistage sampling can have more than 2 stages. For example, to obtain a random sample of physicians in the United States, you choose 10 states at random (stage 1, cluster). From each state you choose at random 8 hospitals (stage 2, cluster). Finally, from each hospital, you choose 5 physicians from each sub-specialty (stage 3, stratified).</p> 
+</div>
+<div class="footnotes">
+<hr />
+<ol start="11">
+<li id="fn11"><p><a href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085" class="uri">https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b868a80020ca600eda22f1586f085</a><a href="sampling-and-designing-studies.html#fnref11">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="designing-studies.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/alanarnholt/PDS-BookDown2/edit/master/16-chapter.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

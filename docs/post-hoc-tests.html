@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
+  
+  
+  
+
+<meta name="author" content="Modified for use with R, GitHub, and Zotero">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="making-conclusions-in-context.html">
+<link rel="next" href="chi-square-test-of-independence.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Passion Driven Statistics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
+<li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sets.html"><a href="data-sets.html"><i class="fa fa-check"></i><b>2</b> Data Sets</a></li>
+<li class="chapter" data-level="3" data-path="data-architecture.html"><a href="data-architecture.html"><i class="fa fa-check"></i><b>3</b> Data Architecture</a></li>
+<li class="chapter" data-level="4" data-path="conducting-a-literature-review.html"><a href="conducting-a-literature-review.html"><i class="fa fa-check"></i><b>4</b> Conducting a Literature Review</a></li>
+<li class="chapter" data-level="5" data-path="writing-about-empirical-research.html"><a href="writing-about-empirical-research.html"><i class="fa fa-check"></i><b>5</b> Writing About Empirical Research</a></li>
+<li class="chapter" data-level="6" data-path="working-with-data.html"><a href="working-with-data.html"><i class="fa fa-check"></i><b>6</b> Working with Data</a></li>
+<li class="chapter" data-level="7" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>7</b> Data Management</a></li>
+<li class="chapter" data-level="8" data-path="graphing-one-variable-at-a-time.html"><a href="graphing-one-variable-at-a-time.html"><i class="fa fa-check"></i><b>8</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1" data-path="symmetric-distributions.html"><a href="symmetric-distributions.html"><i class="fa fa-check"></i><b>8.1</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.2" data-path="skewed-right-distributions.html"><a href="skewed-right-distributions.html"><i class="fa fa-check"></i><b>8.2</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.3" data-path="skewed-left-distributions.html"><a href="skewed-left-distributions.html"><i class="fa fa-check"></i><b>8.3</b> Skewed Left Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="graphing-relationships.html"><a href="graphing-relationships.html"><i class="fa fa-check"></i><b>9</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1" data-path="bivariate-graphing.html"><a href="bivariate-graphing.html"><i class="fa fa-check"></i><b>9.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.2" data-path="multivariate-graphing.html"><a href="multivariate-graphing.html"><i class="fa fa-check"></i><b>9.2</b> Multivariate Graphing</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>10</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="11" data-path="analysis-of-variance.html"><a href="analysis-of-variance.html"><i class="fa fa-check"></i><b>11</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1" data-path="the-anova-f-test.html"><a href="the-anova-f-test.html"><i class="fa fa-check"></i><b>11.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.2" data-path="the-idea-behind-the-anova-f-test.html"><a href="the-idea-behind-the-anova-f-test.html"><i class="fa fa-check"></i><b>11.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.3" data-path="finding-the-p-value.html"><a href="finding-the-p-value.html"><i class="fa fa-check"></i><b>11.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.4" data-path="making-conclusions-in-context.html"><a href="making-conclusions-in-context.html"><i class="fa fa-check"></i><b>11.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.5" data-path="post-hoc-tests.html"><a href="post-hoc-tests.html"><i class="fa fa-check"></i><b>11.5</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chi-square-test-of-independence.html"><a href="chi-square-test-of-independence.html"><i class="fa fa-check"></i><b>12</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>12.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="the-chi-square-test-for-independence.html"><a href="the-chi-square-test-for-independence.html"><i class="fa fa-check"></i><b>12.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.3" data-path="the-idea-of-the-chi-square-test.html"><a href="the-idea-of-the-chi-square-test.html"><i class="fa fa-check"></i><b>12.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.4" data-path="post-hoc-tests-1.html"><a href="post-hoc-tests-1.html"><i class="fa fa-check"></i><b>12.4</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="correlation-coefficient.html"><a href="correlation-coefficient.html"><i class="fa fa-check"></i><b>13</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1" data-path="interpreting-the-scatterplot.html"><a href="interpreting-the-scatterplot.html"><i class="fa fa-check"></i><b>13.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.2" data-path="the-correlation-coefficient.html"><a href="the-correlation-coefficient.html"><i class="fa fa-check"></i><b>13.2</b> The Correlation Coefficient</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="moderation.html"><a href="moderation.html"><i class="fa fa-check"></i><b>14</b> Moderation</a></li>
+<li class="chapter" data-level="15" data-path="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><i class="fa fa-check"></i><b>15</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+<li class="chapter" data-level="16" data-path="sampling-and-designing-studies.html"><a href="sampling-and-designing-studies.html"><i class="fa fa-check"></i><b>16</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1" data-path="designing-studies.html"><a href="designing-studies.html"><i class="fa fa-check"></i><b>16.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.2" data-path="identifying-study-design.html"><a href="identifying-study-design.html"><i class="fa fa-check"></i><b>16.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.3" data-path="experiments-vs-observational-studies.html"><a href="experiments-vs-observational-studies.html"><i class="fa fa-check"></i><b>16.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
+<li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
+<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="post-hoc-tests" class="section level2">
+<h2><span class="header-section-number">11.5</span> Post Hoc Tests</h2>
+<p>When testing the relationship between your explanatory (<span class="math inline">\(X\)</span>) and response variable (<span class="math inline">\(Y\)</span>) in the context of ANOVA, your categorical explanatory variable (<span class="math inline">\(X\)</span>) may have more than two levels.</p>
+<p>For example, when we examine the differences in mean GPA (<span class="math inline">\(Y\)</span>) across different college years (<span class="math inline">\(X\)</span> = freshman, sophomore, junior and senior) or the differences in mean frustration level (<span class="math inline">\(Y\)</span>) by college major (<span class="math inline">\(X\)</span> = Business, English, Mathematics, Psychology), there is just one alternative hypothesis, which claims that there is a relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>When the null hypothesis is rejected, the conclusion is that not all the means are equal.</p>
+<p>Note that there are many ways for <span class="math inline">\(\mu_1, \mu_2, \mu_3, \mu_4\)</span> not to be all equal, and <span class="math inline">\(\mu_1 \neq \mu_2 \neq \mu_3 \neq \mu_4\)</span> is just one of them. Another way could be <span class="math inline">\(\mu_1 = \mu_2 = \mu_3 \neq \mu_4\)</span> or <span class="math inline">\(\mu_1 = \mu_2 \neq \mu_3 \neq \mu_4\)</span></p>
+<p>In the case where the explanatory variable (<span class="math inline">\(X\)</span>) represents more than two groups, a significant ANOVA F test does not tell us which groups are different from the others.</p>
+<p>To determine which groups are different from the others, we would need to perform post hoc tests. These tests, done after the ANOVA, are generally termed <strong>post hoc paired comparisons.</strong></p>
+<p>Post hoc paired comparisons (meaning “after the fact” or “afterdata collection”) must be conducted in a particular way in order to prevent excessive <strong>Type I error</strong>.</p>
+<p>Type I error occurs when you make an incorrect decision about the null hypothesis. Specifically, this type of error is made when your p-value makes you reject the null hypothesis (<span class="math inline">\(H_0\)</span>) when it is true. In other words, your p-value is sufficiently small for you to say that there is a real association, despite the fact that the differences you see are due to chance alone. The type I error rate equals your p-value and is denoted by the Greek letter <span class="math inline">\(\alpha\)</span> (alpha).</p>
+<p>Although a Type I Error rate of 0.05 is considered acceptable (i.e. it is acceptable that 5 times out of 100 you will reject the null hypothesis when it is true), higher Type I error rates are not considered acceptable. If you were to use the significance level of 0.05 across multiple paired comparisons (for example, three independent comparisons) with <span class="math inline">\(\alpha = 0 .05\)</span>, then the <span class="math inline">\(\alpha\)</span> rate across all three comparisons is <span class="math inline">\(1 - (1 - \alpha)^{\text{Number of comparisons}} = 1 - (1 - 0.05)^3 = 0.142625\)</span>. In other words, across the unprotected paired comparisons you will reject the null hypothesis when it is true roughly 14 times out of 100.</p>
+<p>The purpose of running protected post hoc tests is that they allow you to conduct multiple paired comparisons without inflating the Type I Error rate.</p>
+<p>For ANOVA, you can use one of several post hoc tests, each which control for Type I Error, while performing paired comparisons (Duncan Multiple Range test, Dunnett’s Multiple Comparison test, Newman-Keuls test, Scheffe’s test, Tukey’s HSD test, Fisher’s LSD test, Sidak).</p>
+<p><strong>Analysis of Variance</strong></p>
+<p>Analysis of variance assesses whether the means of two or more groups are statistically different from each other. This analysis is appropriate when you want to compare the means (quantitative variables) of <span class="math inline">\(k\)</span> groups (categorical variables) under certain assumptions (constant variance for all <span class="math inline">\(k\)</span> groups). The null hypothesis is that there is no difference in the mean of the quantitative variable across groups (categorical variable), while the alternative is that there is a difference.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration))</code></pre></div>
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Frustration.Score ~ Major, data = frustration)
+
+$Major
+                            diff        lwr      upr     p adj
+English-Business       4.4571429  2.8449899 6.069296 0.0000000
+Mathematics-Business   5.8857143  4.2735614 7.497867 0.0000000
+Psychology-Business    6.7142857  5.1021328 8.326439 0.0000000
+Mathematics-English    1.4285714 -0.1835815 3.040724 0.1019527
+Psychology-English     2.2571429  0.6449899 3.869296 0.0021515
+Psychology-Mathematics 0.8285714 -0.7835815 2.440724 0.5411978</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
+<span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">11.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
+<span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(<span class="kw">aov</span>(Frustration.Score ~<span class="st"> </span>Major, <span class="dt">data =</span> frustration)))</code></pre></div>
+<p><img src="pds_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar) <span class="co"># reset margins</span></code></pre></div>
+<p>Of the <span class="math inline">\(\binom{4}{2}=6\)</span> pairwise differences, Tukey’s HSD suggest that all except <code>Mathematics - English</code> and <code>Psychology - Mathematics</code> are significant.</p>
+<p><strong>Analysis of Variance Assignment</strong></p>
+<p>Post the syntax to your private GitHub repository used to run an ANOVA along with corresponding output and a few sentences of interpretation. You will need to analyze and interpret post hoc paired comparisons in instances where your original statistical test was significant, and you were examining more than two groups (i.e. more than two levels of a categorical, explanatory variable).</p>
+<p><strong>Example of how to write results for ANOVA:</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MEANS &lt;-<span class="st"> </span><span class="kw">tapply</span>(nesarc$DailyCigsSmoked, <span class="kw">list</span>(nesarc$TobaccoDependence), mean, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)
+MEANS</code></pre></div>
+<pre><code>No Nicotine Dependence    Nicotine Dependence 
+              11.41393               14.62782 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">SD &lt;-<span class="st"> </span><span class="kw">tapply</span>(nesarc$DailyCigsSmoked, <span class="kw">list</span>(nesarc$TobaccoDependence), sd, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)
+SD</code></pre></div>
+<pre><code>No Nicotine Dependence    Nicotine Dependence 
+              7.427612               9.152854 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RES &lt;-<span class="st"> </span><span class="kw">summary</span>(<span class="kw">aov</span>(DailyCigsSmoked ~<span class="st"> </span>TobaccoDependence, <span class="dt">data =</span> nesarc))
+RES</code></pre></div>
+<pre><code>                    Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+TobaccoDependence    1   3241    3241   44.68 3.42e-11 ***
+Residuals         1313  95236      73                     
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+5 observations deleted due to missingness</code></pre>
+<p>When examining the association between current number of cigarettes smoked (quantitative response) and past year nicotine dependence (categorical explanatory), an Analysis of Variance (ANOVA) revealed that among daily, young adult smokers (my sample), those with nicotine dependence reported smoking significantly more cigarettes per day (Mean = 14.6, s.d. <span class="math inline">\(\pm\)</span> 9.2) compared to those without nicotine dependence (Mean = 11.4, s.d. <span class="math inline">\(\pm\)</span> 7.4), F(1, 1313) = 44.7, p &lt; 0.0001.</p>
+<p><strong>Example of how to write post hoc ANOVA results:</strong></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nesarc$DCScat &lt;-<span class="st"> </span><span class="kw">cut</span>(nesarc$DailyCigsSmoked, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">98</span>), <span class="dt">include.lowest =</span> <span class="ot">FALSE</span>)
+mod &lt;-<span class="st"> </span><span class="kw">aov</span>(NumberNicotineSymptoms ~<span class="st"> </span>DCScat, <span class="dt">data =</span> nesarc)
+RES &lt;-<span class="st"> </span><span class="kw">summary</span>(mod)
+RES</code></pre></div>
+<pre><code>              Df Sum Sq Mean Sq F value Pr(&gt;F)    
+DCScat         4  22049    5512   31.95 &lt;2e-16 ***
+Residuals   1310 225997     173                   
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+5 observations deleted due to missingness</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tapply</span>(nesarc$NumberNicotineSymptoms, nesarc$DCScat, mean)</code></pre></div>
+<pre><code>   (0,5]   (5,10]  (10,15]  (15,20]  (20,98] 
+13.37751 17.79874 22.90299 23.56522 26.04598 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">TukeyHSD</span>(mod)</code></pre></div>
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = NumberNicotineSymptoms ~ DCScat, data = nesarc)
+
+$DCScat
+                      diff       lwr       upr     p adj
+(5,10]-(0,5]     4.4212321  1.616191  7.226273 0.0001739
+(10,15]-(0,5]    9.5254750  5.681531 13.369419 0.0000000
+(15,20]-(0,5]   10.1877074  7.243633 13.131781 0.0000000
+(20,98]-(0,5]   12.6684670  8.200190 17.136744 0.0000000
+(10,15]-(5,10]   5.1042429  1.596411  8.612074 0.0007080
+(15,20]-(5,10]   5.7664753  3.277188  8.255762 0.0000000
+(20,98]-(5,10]   8.2472349  4.064595 12.429874 0.0000008
+(15,20]-(10,15]  0.6622323 -2.957740  4.282205 0.9873982
+(20,98]-(10,15]  3.1429919 -1.796859  8.082843 0.4109223
+(20,98]-(15,20]  2.4807596 -1.796365  6.757884 0.5077204</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">opar &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">no.readonly =</span> <span class="ot">TRUE</span>)
+<span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="fl">5.1</span>, <span class="fl">8.1</span>, <span class="fl">4.1</span>, <span class="fl">2.1</span>), <span class="dt">las =</span> <span class="dv">1</span>) <span class="co"># Enlarge left margin</span>
+<span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(mod))</code></pre></div>
+<p><img src="pds_files/figure-html/unnamed-chunk-46-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar)</code></pre></div>
+<p>ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (4, 1310) = 31.95, p &lt; 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and &gt;20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).</p>
+<hr />
+
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="making-conclusions-in-context.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chi-square-test-of-independence.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/alanarnholt/PDS-BookDown2/edit/master/11-chapter.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

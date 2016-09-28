@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Passion Driven Statistics</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="<a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a>">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Passion Driven Statistics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Passion Driven Statistics" />
+  
+  
+  
+
+<meta name="author" content="Modified for use with R, GitHub, and Zotero">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="skewed-right-distributions.html">
+<link rel="next" href="graphing-relationships.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Passion Driven Statistics</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#this-document-is-maintained-by-alan-t.-arnholt">This document is maintained by <a href="https://alanarnholt.github.io/web/">Alan T. Arnholt</a></a></li>
+<li class="chapter" data-level="1" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a><ul>
+<li class="chapter" data-level="1.1" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>1.1</b> Resources</a></li>
+<li class="chapter" data-level="1.2" data-path="an-introduction-to-statistics.html"><a href="an-introduction-to-statistics.html"><i class="fa fa-check"></i><b>1.2</b> An Introduction to Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-sets.html"><a href="data-sets.html"><i class="fa fa-check"></i><b>2</b> Data Sets</a></li>
+<li class="chapter" data-level="3" data-path="data-architecture.html"><a href="data-architecture.html"><i class="fa fa-check"></i><b>3</b> Data Architecture</a></li>
+<li class="chapter" data-level="4" data-path="conducting-a-literature-review.html"><a href="conducting-a-literature-review.html"><i class="fa fa-check"></i><b>4</b> Conducting a Literature Review</a></li>
+<li class="chapter" data-level="5" data-path="writing-about-empirical-research.html"><a href="writing-about-empirical-research.html"><i class="fa fa-check"></i><b>5</b> Writing About Empirical Research</a></li>
+<li class="chapter" data-level="6" data-path="working-with-data.html"><a href="working-with-data.html"><i class="fa fa-check"></i><b>6</b> Working with Data</a></li>
+<li class="chapter" data-level="7" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>7</b> Data Management</a></li>
+<li class="chapter" data-level="8" data-path="graphing-one-variable-at-a-time.html"><a href="graphing-one-variable-at-a-time.html"><i class="fa fa-check"></i><b>8</b> Graphing: One Variable at a Time</a><ul>
+<li class="chapter" data-level="8.1" data-path="symmetric-distributions.html"><a href="symmetric-distributions.html"><i class="fa fa-check"></i><b>8.1</b> Symmetric Distributions</a></li>
+<li class="chapter" data-level="8.2" data-path="skewed-right-distributions.html"><a href="skewed-right-distributions.html"><i class="fa fa-check"></i><b>8.2</b> Skewed Right Distributions</a></li>
+<li class="chapter" data-level="8.3" data-path="skewed-left-distributions.html"><a href="skewed-left-distributions.html"><i class="fa fa-check"></i><b>8.3</b> Skewed Left Distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="graphing-relationships.html"><a href="graphing-relationships.html"><i class="fa fa-check"></i><b>9</b> Graphing Relationships</a><ul>
+<li class="chapter" data-level="9.1" data-path="bivariate-graphing.html"><a href="bivariate-graphing.html"><i class="fa fa-check"></i><b>9.1</b> Bivariate Graphing</a></li>
+<li class="chapter" data-level="9.2" data-path="multivariate-graphing.html"><a href="multivariate-graphing.html"><i class="fa fa-check"></i><b>9.2</b> Multivariate Graphing</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>10</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="11" data-path="analysis-of-variance.html"><a href="analysis-of-variance.html"><i class="fa fa-check"></i><b>11</b> Analysis of Variance</a><ul>
+<li class="chapter" data-level="11.1" data-path="the-anova-f-test.html"><a href="the-anova-f-test.html"><i class="fa fa-check"></i><b>11.1</b> The ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.2" data-path="the-idea-behind-the-anova-f-test.html"><a href="the-idea-behind-the-anova-f-test.html"><i class="fa fa-check"></i><b>11.2</b> The Idea Behind the ANOVA F-Test</a></li>
+<li class="chapter" data-level="11.3" data-path="finding-the-p-value.html"><a href="finding-the-p-value.html"><i class="fa fa-check"></i><b>11.3</b> Finding the P-Value</a></li>
+<li class="chapter" data-level="11.4" data-path="making-conclusions-in-context.html"><a href="making-conclusions-in-context.html"><i class="fa fa-check"></i><b>11.4</b> Making Conclusions in Context</a></li>
+<li class="chapter" data-level="11.5" data-path="post-hoc-tests.html"><a href="post-hoc-tests.html"><i class="fa fa-check"></i><b>11.5</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="chi-square-test-of-independence.html"><a href="chi-square-test-of-independence.html"><i class="fa fa-check"></i><b>12</b> Chi-Square Test of Independence</a><ul>
+<li class="chapter" data-level="12.1" data-path="exploratory-analysis.html"><a href="exploratory-analysis.html"><i class="fa fa-check"></i><b>12.1</b> Exploratory Analysis</a></li>
+<li class="chapter" data-level="12.2" data-path="the-chi-square-test-for-independence.html"><a href="the-chi-square-test-for-independence.html"><i class="fa fa-check"></i><b>12.2</b> The Chi-Square Test for Independence</a></li>
+<li class="chapter" data-level="12.3" data-path="the-idea-of-the-chi-square-test.html"><a href="the-idea-of-the-chi-square-test.html"><i class="fa fa-check"></i><b>12.3</b> The Idea of the Chi-Square Test</a></li>
+<li class="chapter" data-level="12.4" data-path="post-hoc-tests-1.html"><a href="post-hoc-tests-1.html"><i class="fa fa-check"></i><b>12.4</b> Post Hoc Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="correlation-coefficient.html"><a href="correlation-coefficient.html"><i class="fa fa-check"></i><b>13</b> Correlation Coefficient</a><ul>
+<li class="chapter" data-level="13.1" data-path="interpreting-the-scatterplot.html"><a href="interpreting-the-scatterplot.html"><i class="fa fa-check"></i><b>13.1</b> Interpreting the scatterplot</a></li>
+<li class="chapter" data-level="13.2" data-path="the-correlation-coefficient.html"><a href="the-correlation-coefficient.html"><i class="fa fa-check"></i><b>13.2</b> The Correlation Coefficient</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="moderation.html"><a href="moderation.html"><i class="fa fa-check"></i><b>14</b> Moderation</a></li>
+<li class="chapter" data-level="15" data-path="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><a href="linear-regression-summarizing-the-pattern-of-the-data-with-a-line.html"><i class="fa fa-check"></i><b>15</b> Linear Regression: Summarizing the Pattern of the Data with a Line</a></li>
+<li class="chapter" data-level="16" data-path="sampling-and-designing-studies.html"><a href="sampling-and-designing-studies.html"><i class="fa fa-check"></i><b>16</b> Sampling and Designing Studies</a><ul>
+<li class="chapter" data-level="16.1" data-path="designing-studies.html"><a href="designing-studies.html"><i class="fa fa-check"></i><b>16.1</b> Designing Studies</a></li>
+<li class="chapter" data-level="16.2" data-path="identifying-study-design.html"><a href="identifying-study-design.html"><i class="fa fa-check"></i><b>16.2</b> Identifying Study Design</a></li>
+<li class="chapter" data-level="16.3" data-path="experiments-vs-observational-studies.html"><a href="experiments-vs-observational-studies.html"><i class="fa fa-check"></i><b>16.3</b> Experiments vs. Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="confounding-and-multivariate-models.html"><a href="confounding-and-multivariate-models.html"><i class="fa fa-check"></i><b>17</b> Confounding and Multivariate Models</a></li>
+<li class="chapter" data-level="18" data-path="poster-presentation.html"><a href="poster-presentation.html"><i class="fa fa-check"></i><b>18</b> Poster Presentation</a></li>
+<li class="chapter" data-level="" data-path="copyright.html"><a href="copyright.html"><i class="fa fa-check"></i>Copyright</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><a href="http://www.wesleyan.edu/qac/curriculum/resources/index.html">Passion Driven Statistics</a></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="skewed-left-distributions" class="section level2">
+<h2><span class="header-section-number">8.3</span> Skewed Left Distributions</h2>
+<p><img src="pds_files/figure-html/unnamed-chunk-18-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>A distribution is called skewed left if, as in the histogram above, the left tail (smaller values) is much longer than the right tail (larger values). Note that in a skewed left distribution, the bulk of the observations are medium/large, with a few observations that are much smaller than the rest. An example of a real life variable that has a skewed left distribution is age of death from natural causes (heart disease, cancer, etc.). Most such deaths happen at older ages, with fewer cases happening at younger ages.</p>
+<p>Recall our grades example:</p>
+<p><img src="pds_files/figure-html/unnamed-chunk-19-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>As you can see from the histogram, the grades distribution is roughly symmetric.</p>
+<p><strong>Center</strong></p>
+<p>The center of the distribution is its midpoint—the value that divides the distribution so that approximately half the observations take smaller values, and approximately half the observations take larger values. Note that from looking at the histogram we can get only a rough estimate for the center of the distribution. (More exact ways of finding measures of center will be discussed in the next section.)</p>
+<p>Recall our grades example (image above). As you can see from the histogram, the center of the grades distribution is roughly 70 (7 students scored below 70, and 8 students scored above 70).</p>
+<p><strong>Spread</strong></p>
+<p>The spread (also called variability) of the distribution can be described by the approximate range covered by the data. From looking at the histogram, we can approximate the smallest observation (minimum), and the largest observation (maximum), and thus approximate the range.</p>
+<p><em>In our example:</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">exam &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">88</span>, <span class="dv">48</span>, <span class="dv">60</span>, <span class="dv">51</span>, <span class="dv">57</span>, <span class="dv">85</span>, <span class="dv">69</span>, <span class="dv">75</span>, <span class="dv">97</span>, <span class="dv">72</span>, <span class="dv">71</span>, <span class="dv">79</span>, <span class="dv">65</span>, <span class="dv">63</span>, <span class="dv">73</span>)
+<span class="kw">min</span>(exam)</code></pre></div>
+<pre><code>[1] 48</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">max</span>(exam)</code></pre></div>
+<pre><code>[1] 97</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">range</span>(exam)</code></pre></div>
+<pre><code>[1] 48 97</code></pre>
+<p><strong>Outliers</strong></p>
+<p>Outliers are observations that fall outside the overall pattern. For example, the following histogram represents a distribution that has a high probable outlier:</p>
+<p><img src="pds_files/figure-html/unnamed-chunk-21-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>The overall pattern of the distribution of a quantitative variable is described by its shape, center, and spread. By inspecting the histogram, we can describe the shape of the distribution, but, as we saw, we can only get a rough estimate for the center and spread. A description of the distribution of a quantitative variable must include, in addition to the graphical display, a more precise numerical description of the center and spread of the distribution.</p>
+<p>The two main numerical measures for the center of a distribution are the mean and the median. Each one of these measures is based on a completely different idea of describing the center of a distribution.</p>
+<p><strong>Mean</strong></p>
+<p>The mean is the average of a set of observations (i.e., the sum of the observations divided by the number of observations). If the <span class="math inline">\(n\)</span> observations are <span class="math inline">\(x_1, x_2,\ldots,x_n\)</span>, their mean, which we denote <span class="math inline">\(\bar{x}\)</span> (and read x-bar), is therefore: <span class="math display">\[\bar{x}=\frac{x_1+ x_2+\cdots+x_n}{n}\]</span>.</p>
+<p><em>World Cup Soccer</em></p>
+<p>The data frame <code>SOCCER</code> from the <code>PASWR2</code> package contains how many goals were scored in the regulation 90 minute periods of World Cup soccer matches from 1990 to 2002.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Total # of Goals</th>
+<th align="center">Game Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">1</td>
+<td align="center">49</td>
+</tr>
+<tr class="odd">
+<td align="center">2</td>
+<td align="center">60</td>
+</tr>
+<tr class="even">
+<td align="center">3</td>
+<td align="center">47</td>
+</tr>
+<tr class="odd">
+<td align="center">4</td>
+<td align="center">32</td>
+</tr>
+<tr class="even">
+<td align="center">5</td>
+<td align="center">18</td>
+</tr>
+<tr class="odd">
+<td align="center">6</td>
+<td align="center">3</td>
+</tr>
+<tr class="even">
+<td align="center">7</td>
+<td align="center">3</td>
+</tr>
+<tr class="odd">
+<td align="center">8</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p>To find the mean number of goals scored per game, we would need to find the sum of all 232 numbers, then divide that sum by 232. Rather than add 232 numbers, we use the fact that the same numbers appear many times. For example, the number 0 appears 19 times, the number 1 appears 49 times, the number 2 appears 60 times, etc.</p>
+<p>If we add up 19 zeros, we get 0. If we add up 49 ones, we get 49. If we add up 60 twos, we get 120. Repeated addition is multiplication.</p>
+<p>Thus, the sum of the 232 numbers = 0(19) + 1(49) + 2(60) + 3(47) + 4(32) + 5(18) + 6(3) + 7(3) + 8(1) = 575. The mean is 575 / 232 = 2.478448.</p>
+<p>This way of calculating a mean is sometimes referred to as a weighted average, since each value is “weighted” by its frequency.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PASWR2)
+FT &lt;-<span class="st"> </span><span class="kw">xtabs</span>(~goals, <span class="dt">data =</span> SOCCER)
+FT</code></pre></div>
+<pre><code>goals
+ 0  1  2  3  4  5  6  7  8 
+19 49 60 47 32 18  3  3  1 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pgoal &lt;-<span class="st"> </span>FT/<span class="dv">575</span>
+pgoal</code></pre></div>
+<pre><code>goals
+          0           1           2           3           4           5 
+0.033043478 0.085217391 0.104347826 0.081739130 0.055652174 0.031304348 
+          6           7           8 
+0.005217391 0.005217391 0.001739130 </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ngoals &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">names</span>(FT))
+ngoals</code></pre></div>
+<pre><code>[1] 0 1 2 3 4 5 6 7 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">weighted.mean</span>(<span class="dt">x =</span> ngoals, <span class="dt">w =</span> pgoal)</code></pre></div>
+<pre><code>[1] 2.478448</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(SOCCER$goals, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<pre><code>[1] 2.478448</code></pre>
+<p><strong>Median</strong></p>
+<p>The median (<span class="math inline">\(M\)</span>) is the midpoint of the distribution. It is the number such that half of the observations fall above and half fall below. To find the median:</p>
+<ul>
+<li>Order the data from smallest to largest</li>
+<li>Consider whether <span class="math inline">\(n\)</span>, the number of observations, is even or odd.</li>
+<li>If <span class="math inline">\(n\)</span> is odd, the median <span class="math inline">\(M\)</span> is the center observation in the ordered list. This observation is the one “sitting” in the <span class="math inline">\((n + 1)/2\)</span> spot in the ordered list</li>
+<li>If <span class="math inline">\(n\)</span> is even,the median <span class="math inline">\(M\)</span> is the mean of the two center observations in the ordered list. These two observations are the ones “sitting” in the <span class="math inline">\(n/2\)</span> and <span class="math inline">\((n/2) + 1\)</span> spots in the ordered list.</li>
+</ul>
+<p>For the <code>SOCCER</code> example, the median number of goals is the average of the values at the <code>232/2 = 116</code> ordered location (a two) and the <code>232/2 + 1 = 117</code> ordered location (also a two). The average of two <code>2</code>s is a <code>2</code>. Using the <code>median</code> function in <code>R</code> below verifies the answer.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">median</span>(SOCCER$goals, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<pre><code>[1] 2</code></pre>
+<p><strong>Comparing the Mean and Median</strong></p>
+<p>As we have seen, the mean and the median, the most common measures of center, each describe the center of a distribution of values in a different way. The mean describes the center as an average value, in which the actual values of the data points play an important role. The median, on the other hand, locates the middle value as the center, and the order of the data is the key to finding it.</p>
+<p>To get a deeper understanding of the differences between these two measures of center, consider the following example.</p>
+<p>Here are two datasets:</p>
+<p>Data set A <span class="math inline">\(\rightarrow\)</span> (64, 65, 66, 68, 70, 71, 73)</p>
+<p>Data set B <span class="math inline">\(\rightarrow\)</span> (64, 65, 66, 68, 70, 71, 730)</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">DataA &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">64</span>, <span class="dv">65</span>, <span class="dv">66</span>, <span class="dv">68</span>, <span class="dv">70</span>, <span class="dv">71</span>, <span class="dv">73</span>)
+DataB &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">64</span>, <span class="dv">65</span>, <span class="dv">66</span>, <span class="dv">68</span>, <span class="dv">70</span>, <span class="dv">71</span>, <span class="dv">730</span>)
+meanA &lt;-<span class="st"> </span><span class="kw">mean</span>(DataA)
+meanB &lt;-<span class="st"> </span><span class="kw">mean</span>(DataB)
+medianA &lt;-<span class="st"> </span><span class="kw">median</span>(DataA)
+medianB &lt;-<span class="st"> </span><span class="kw">median</span>(DataB)
+<span class="kw">c</span>(meanA, meanB, medianA, medianB)</code></pre></div>
+<pre><code>[1]  68.14286 162.00000  68.00000  68.00000</code></pre>
+<p>For dataset A, the mean is 68.1428571, and the median is 68. Looking at dataset B, notice that all of the observations except the last one are close together. The observation 730 is very large, and is certainly an outlier. In this case, the median is still 68, but the mean will be influenced by the high outlier, and shifted up to 162. The message that we should take from this example is:</p>
+<p><em>The mean is very sensitive to outliers (because it factors in their magnitude), while the median is resistant to outliers.</em></p>
+<p>Therefore:</p>
+<ul>
+<li>For symmetric distributions with no outliers: <span class="math inline">\(\bar{x}\)</span> is approximately equal to <span class="math inline">\(M\)</span>.</li>
+</ul>
+<p><img src="pds_files/figure-html/unnamed-chunk-26-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>In the distribution above, the mean is 9.9965127 and the median is 9.9925812.</p>
+<ul>
+<li>For skewed right distributions and/or data sets with high outliers: <span class="math inline">\(\bar{x} &gt; M\)</span></li>
+</ul>
+<p><img src="pds_files/figure-html/unnamed-chunk-27-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>In the distribution above, the mean is 0.1998402 and the median is 0.168208.</p>
+<ul>
+<li>For skewed left distributions and/or data sets with high outliers: <span class="math inline">\(\bar{x} &lt; M\)</span></li>
+</ul>
+<p><img src="pds_files/figure-html/unnamed-chunk-28-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>In the distribution above, the mean is 1.8001598 and the median is 1.831792.</p>
+<p>We will therefore use <span class="math inline">\(\bar{x}\)</span> as a measure of center for symmetric distributions with no outliers. Otherwise, the median will be a more appropriate measure of the center of our data.</p>
+<p><strong>Measures of Spread</strong></p>
+<p>So far we have learned about different ways to quantify the center of a distribution. A measure of center by itself is not enough, though, to describe a distribution. Consider the following two distributions of exam scores. Both distributions are centered around 70 (the mean and median of both distributions is approximately 70), but the distributions are quite different. The first distribution has a much larger variability in scores compared to the second one.</p>
+<p><img src="pds_files/figure-html/unnamed-chunk-29-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>In order to describe the distribution, we therefore need to supplement the graphical display not only with a measure of center, but also with a measure of the variability (or spread) of the distribution.</p>
+<p><strong>Range</strong></p>
+<p>The range covered by the data is the most intuitive measure of variability. The range is exactly the distance between the smallest data point (Min) and the largest one (Max). <code>Range = Max - Min</code></p>
+<p><strong>Standard Deviation</strong></p>
+<p>The idea behind the standard deviation is to quantify the spread of a distribution by measuring how far the observations are from their mean, <span class="math inline">\(\bar{x}\)</span>. The standard deviation gives the average (or typical distance) between a data point and the mean, <span class="math inline">\(\bar{x}\)</span>.</p>
+<p><strong>Notation</strong></p>
+<p>There are many notations for the standard deviation: SD, s, Sd, StDev. Here, we’ll use SD as an abbreviation for standard deviation and use s as the symbol.</p>
+<p><strong>Calculation</strong></p>
+<p>In order to get a better understanding of the standard deviation, it would be useful to see an example of how it is calculated. In practice, we will use statistical software to do the calculation.</p>
+<p><em>Video Store Calculations</em></p>
+<p>The following are the number of customers who entered a video store in 8 consecutive hours:</p>
+<p>7, 9, 5, 13, 3, 11, 15, 9</p>
+<p>To find the standard deviation of the number of hourly customers:</p>
+<ol style="list-style-type: decimal">
+<li><p>Find the mean, <span class="math inline">\(\bar{x}\)</span> of your data: <span class="math inline">\(7 + 9 + 5 + ... + 98 = 9\)</span></p></li>
+<li><p>Find the deviations from the mean: the difference between each observation and the mean <span class="math inline">\((7 - 9), (9 - 9), (5 - 9), (13 - 9), (3 - 9), (11 - 9), (15 - 9), (9 - 9)\)</span></p></li>
+<li><p>These numbers are <span class="math inline">\(-2, 0, -4, 4, -6, 2, 6, 0\)</span></p></li>
+<li><p>Since the standard deviation is the average (typical) distance between the data points and their mean, it would make sense to average the deviations we got. Note, however, that the sum of the deviations from the mean, <span class="math inline">\(\bar{x}\)</span>, is 0 (add them up and see for yourself). This is always the case, and is the reason why we have to do a more complicated calculation to determine the standard deviation</p></li>
+<li><p>Square each of the deviations: The first few are: <span class="math inline">\((-2)^2 = 4, (0)^2 = 0, (-4)^2 = 16\)</span>, and the rest are <span class="math inline">\(16, 36, 4, 36, 0\)</span></p></li>
+<li><p>Average the square deviations by adding them up and dividing by <span class="math inline">\(n - 1\)</span> (one less than the sample size): <span class="math inline">\(4+0+16+16+36+4+36+0(8−1)=1127=16\)</span></p></li>
+</ol>
+<ul>
+<li><p>The reason why we “sort of” average the square deviations (divide by <span class="math inline">\(n −1\)</span> ) rather than take the actual average (divide by $$) is beyond the scope of the course at this point, but will be addressed later.</p></li>
+<li><p>This average of the squared deviations is called the variance of the data.</p></li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li>The SD of the data is the square root of the variance: SD <span class="math inline">\(= \sqrt{16} = 4\)</span></li>
+</ol>
+<ul>
+<li>Why do we take the square root? Note that 16 is an average of the squared deviations, and therefore has different units of measurement. In this case 16 is measured in “squared customers”, which obviously cannot be interpreted. We therefore take the square root in order to compensate for the fact that we squared our deviations and in order to go back to the original unit of measurement.</li>
+</ul>
+<p>Recall that the average number of customers who enter the store in an hour is 9. The interpretation of SD = 4 is that, on average, the actual number of customers that enter the store each hour is 4 away from 9.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">7</span>, <span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">13</span>, <span class="dv">3</span>, <span class="dv">11</span>, <span class="dv">15</span>, <span class="dv">9</span>)
+n &lt;-<span class="st"> </span><span class="kw">length</span>(x)
+xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(x)
+xbar</code></pre></div>
+<pre><code>[1] 9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dev &lt;-<span class="st"> </span>x -<span class="st"> </span>xbar
+dev</code></pre></div>
+<pre><code>[1] -2  0 -4  4 -6  2  6  0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dev2 &lt;-<span class="st"> </span>dev^<span class="dv">2</span>
+dev2</code></pre></div>
+<pre><code>[1]  4  0 16 16 36  4 36  0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cbind</span>(x, dev, dev2)</code></pre></div>
+<pre><code>      x dev dev2
+[1,]  7  -2    4
+[2,]  9   0    0
+[3,]  5  -4   16
+[4,] 13   4   16
+[5,]  3  -6   36
+[6,] 11   2    4
+[7,] 15   6   36
+[8,]  9   0    0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">VAR &lt;-<span class="st"> </span><span class="kw">sum</span>(dev2)/(n -<span class="st"> </span><span class="dv">1</span>)
+VAR</code></pre></div>
+<pre><code>[1] 16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">SD &lt;-<span class="st"> </span><span class="kw">sqrt</span>(VAR)
+SD</code></pre></div>
+<pre><code>[1] 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Or using functions var() and sd()</span>
+<span class="kw">var</span>(x)</code></pre></div>
+<pre><code>[1] 16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(x)</code></pre></div>
+<pre><code>[1] 4</code></pre>
+<p><strong>Univariate Graphing Lab</strong></p>
+<p>There are a variety of conventional ways to visualize data-tables, histograms, bar graphs, etc. Now that your data have been managed, it is time to graph your variables one at a time and examine both center and spread.</p>
+<p>Recall that the <a href="https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf">data visualization cheat sheet</a> has many helpful commands for graphing your data.</p>
+<p><strong>Univariate Graphing Assignment</strong></p>
+<p>Post univariate graphs of your two main constructs to your private GitHub repository (i.e. data managed variables). Write a few sentences describing what your graphs reveal in terms of shape, spread, and center.</p>
+<hr />
+
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="skewed-right-distributions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="graphing-relationships.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/alanarnholt/PDS-BookDown2/edit/master/08-chapter.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

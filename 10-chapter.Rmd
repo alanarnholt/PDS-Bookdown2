@@ -1,0 +1,104 @@
+
+
+# Hypothesis Testing
+
+Please watch the [Chapter 10 video](http://passiondrivenstatistics.com/2015/07/15/chapter-10/).
+
+Thus far, we have focused on descriptive statistics. Through our examination of frequency distributions, graphical representations of our variables, and calculations of center and spread, the goal has been to describe and summarize data. Now you will be introduced to inferential statistics. In addition to describing data, inferential statistics allow us to directly test our hypothesis by evaluating (based on a sample) our research question with the goal of generalizing the results to the larger population from which the sample was drawn.
+
+Hypothesis testing is one of the most important inferential tools of application of statistics to real life problems. It is used when we need to make decisions concerning populations on the basis of only sample information. A variety of statistical tests are used to arrive at these decisions (e.g. Analysis of Variance, Chi-Square Test of Independence, etc.). Steps involved in hypothesis testing include specifying the null ($H_0$) and alternate ($H_a$ or $H_1$) hypotheses; choosing a sample; assessing the evidence; and making conclusions.
+
+**Statistical hypothesis testing is defined as assessing evi- dence provided by the data in favor of or against each hypothesis about the population.**
+
+The purpose of this section is to build your understanding about how statistical hypothesis testing works.
+
+
+**Example:**
+
+To test what I have read in the scientific literature, I decide to evaluate whether or not there is a difference in smoking quantity (i.e. number of cigarettes smoked) according to whether or not an individual has a diagnosis of major depression.
+
+Let's analyze this example using the 4 steps: Specifying the null ($H_0$) and alternate ($H_a$) hypotheses; choosing a sample; assessing the evidence; and making conclusions.
+
+There are two opposing hypotheses for this question:
+
+* There is no difference in smoking quantity between people with and without depression.
+* There is a difference in smoking quantity between people with and without depression.
+
+The first hypothesis (aka null hypothesis) basically says nothing special is going on between smoking and depression. In other words, that they are unrelated to one another. The second hypothesis (aka the alternate hypothesis) says that there is a relationship and allows that the difference in smoking between those individuals with and without depression could be in either direction (i.e. individuals with depression may smoke more than individuals without depression or they may smoke less).
+
+*1. Choosing a Sample:*
+
+I chose the NESARC, a representative sample of 43,093 non-institutionalized adults in the U.S. As I am interested in evaluating these hypotheses only among individuals who are smokers and who are younger (rather than older) adults, I subset the NESARC data to individuals that are 1) current daily smokers (i.e. smoked in the past year `CHECK321 ==1`, smoked over 100 cigarettes `S3AQ1A ==1`, typically smoked every day `S3AQ3B1 == 1`) are 2) between the ages 18 and 25. This sample ($n=1320$) showed the following:
+
+```{r}
+# See Chapter 7 for the creation of nesarc
+summary(nesarc)
+tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)
+tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)
+```
+
+* Young adult, daily smokers with depression smoked an average of `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[2], 1)` cigarettes per day (SD = `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)[2], 1)`).
+
+* Young adult, daily smokers without depression smoked an average of `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[1], 1)` cigarettes per day (SD = `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), sd, na.rm = TRUE)[1], 1)`).
+
+While it is true that `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[2], 1)` cigarettes per day are more than `r round(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE)[1], 1)` cigarettes per day, it is not at all clear that this is a large enough difference to reject the null hypothesis.
+
+*2. Assessing the Evidence:*
+
+In order to assess whether the data provide strong enough evidence against the null hypothesis (i.e. against the claim that there is no relationship between smoking and depression), we need to ask ourselves: How surprising is it to get a difference of `r diff(tapply(nesarc$DailyCigsSmoked, list(nesarc$MajorDepression), mean, na.rm = TRUE))` cigarettes smoked per day between our two groups (depression vs. no depression) assuming that the null hypothesis is true (i.e. there is no relationship between smoking and depression).
+
+This is the step where we calculate how likely it is to get data like that observed when $H_0$ is true. In a sense, this is the heart of the process, since we draw our conclusions based on this probability.
+
+It turns out that the probability that we'll get a difference of this size in the mean number of cigarettes smoked in a random sample of 1320 participants is `r t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)$p.value` (do not worry about how this was calculated at this point).
+
+```{r}
+t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)
+pvalue <- t.test(nesarc$DailyCigsSmoked ~ nesarc$MajorDepression, var.equal = TRUE)$p.value
+pvalue
+# Or
+summary(aov(DailyCigsSmoked ~ MajorDepression, data = nesarc))
+```
+
+Well, we found that if the null hypothesis were true (i.e. there is no association) there is a probability of `r pvalue` of observing data like that observed.
+
+Now you have to decide...
+
+Do you think that a probability of `r pvalue` makes our data rare enough (surprising enough) under the null hypothesis so that the fact that we did observe it is enough evidence to reject the null hypothesis?
+
+
+Or do you feel that a probability of `r pvalue` means that data like we observed are not very likely when the null hypothesis is true (not unlikely enough to conclude that getting such data is sufficient evidence to reject the null hypothesis).
+
+Basically, this is your decision. However, it would be nice to have some kind of guideline about what is generally considered surprising enough.
+
+The reason for using an inferential test is to get a **p-value**. The p-value determines whether or not we reject the null hypothesis. The p-value provides an estimate of how often we would get the obtained result by chance if in fact the null hypothesis were true. In statistics, a result is called statistically significant if it is unlikely to have occurred by chance alone. If the p-value is small (i.e. less than 0.05), this suggests that it is likely (more than 95% likely) that the association of interest would be present following repeated samples drawn from the population (aka a sampling distribution).
+
+If this probability is very small, then that means that it would be very surprising to get data like that observed if the null hypothesis were true. The fact that we did not observe such data is therefore evidence supporting the null hypothesis, and we should accept it. On the other hand, if this probability were very small, this means that observing data like that observed is surprising if the null hypothesis were true, so the fact that we observed such data provides evidence against the null hypothesis (i.e. suggests that there is an association between smoking and depression). This crucial probability, therefore, has a special name. It is called the p-value of the test.
+
+In our examples, the p-value was given to you (and you were reassured that you didn't need to worry about how these were derived):
+
+* P-Value = `r pvalue`
+
+Obviously, the smaller the p-value, the more surprising it is to get data like ours when the null hypothesis is true, and therefore the stronger the evidence the data provide against the null. Looking at the p-value in our example we see that there is not adequate evidence to reject the null hypothesis. **In other words, we fail to reject the null hypothesis that there is no association between smoking and depression.**
+
+Since our conclusion is based on how small the p-value is, or in other words, how surprising our data are when the null hypothesis ($H_0$) is true, it would be nice to have some kind of guideline or cutoff that will help determine how small the p-value must be, or how "rare" (unlikely) our data must be when $H_0$ is true, for us to conclude that we have enough evidence to reject $H_0$.  This cutoff exists, and because it is so important, it has a special name. It is called the significance level of the test and is usually denoted by the Greek letter $\alpha$. The most commonly used significance level is $\alpha=0.05$ (or 5%). This means that:
+
+* if the p-value $< \alpha$ (usually 0.05), then the data we got is considered to be "rare (or surprising) enough" when $H_0$ is true, and we say that the data provide significant evidence against $H_0$, so we reject $H_0$ and accept $H_a$.
+
+* if the p-value $> \alpha$ (usually 0.05), then our data are not considered to be "surprising enough" when $H_0$ is true, and we say that our data do not provide enough evidence to reject $H_0$ (or, equivalently, that the data do not provide enough evidence to accept $H_a$).
+
+Although you will **always be interpreting the p-value** for a statistical test, the specific statistical test that you will use to evaluate your hypotheses depends on the type of explanatory and response variables that you have.
+
+**Bivariate Statistical Tools:**
+
+* $C \rightarrow Q$ Analysis of Variance (ANOVA)
+* $C \rightarrow C$ Chi-Square Test of Independence ($\chi^2$) 
+* $Q \rightarrow Q$ Correlation Coefficient (r)
+* $Q \rightarrow C$ Logistic regression
+
+**The Big Idea Behind Inference**
+
+A **sampling distribution** is a distribution of all possible samples (of a given size) that could be drawn from the population. If you have a sampling distribution meant to estimate a mean (e.g. the average number of cigarettes smoked in a population), this would be represented as a distribution of frequencies of mean number of cigarettes for consecutive samples drawn from the population. Although we ultimately rely on only one sample, if that sample is representative of the larger population, inferential statistical tests allow us to estimate (with different levels of certainty) a mean (or other parameter such as a standard deviation, proportion, etc.) for the entire population. This idea is the foundation for each of the inferential tools that you will be using this semester.
+
+
+
+---------------------------

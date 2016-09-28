@@ -1,0 +1,19 @@
+---
+title: "[Passion Driven Statistics](http://www.wesleyan.edu/qac/curriculum/resources/index.html)"
+author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https://github.com/) and [Zotero](https://www.zotero.org/)"
+date: 'Last updated: `r format(Sys.time(), "%B %d, %Y")`'
+knit: "bookdown::render_book"
+site: bookdown::bookdown_site
+documentclass: book
+css: "./CSS/style.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
+```
+
+# This document is maintained by [Alan T. Arnholt](https://alanarnholt.github.io/web/) {-}
+
+Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/alanarnholt/PDS-BookDown2/issues>. 
+
+The source code that creates this document resides at <https://github.com/alanarnholt/PDS-BookDown2/>.
